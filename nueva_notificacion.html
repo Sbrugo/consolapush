@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form>
+            <fieldset>
+                <legend>
+                    <h2>Nueva notificación</h2>
+                </legend>
+            
+                <label for="nombre">Nombre de la notificación</label>
+                <input type="text" placeholder="Prevení el dengue">
+
+                <label for="campania">Campaña</label>
+                <input type="text" placeholder="Dengue">              
+
+                <label for="cuerpo">Cuerpo del mensaje</label>
+                <textarea placeholder="Es muy importante descartar todos los objetos que puedan servir de criadero del mosquito. Recordá acercarte a un centro de salud en caso de que presentes síntomas. Para más información ingresa a argentina.gob.ar/dengue"></textarea>
+                <figcaption>Extensión máxima: 65 carácteres</figcaption>
+
+                <label for="imagen">Imagen</label>
+                <input type="file">
+                <figcaption>Extensión máxima de tamaño: 1mb. Formatos aceptados: JPEG, PNG, BMP</figcaption>
+                <div>
+                            <input type="checkbox" id="destacada" name="destacada" value="Notificacion destacada">
+                            <label for="destacada">Imágen icono</label><br>
+
+                            <input type="checkbox" id="novedades" name="novedades" value='Seccion "novedades"'>
+                            <label for="novedades"> Imágen hero </label><br>
+
+                </div>
+
+                <label for="link">Link</label>
+                <input>
+
+                <div class="checkbox">
+                            <input type="checkbox" id="destacada" name="destacada" value="Notificacion destacada">
+                            <label for="destacada">Notificación destacada</label><br>
+            
+                            <input type="checkbox" id="novedades" name="novedades" value='Seccion "novedades"'>
+                            <label for="novedades"> Sección "novedades" </label><br>
+                </div>
+
+                <div class="checkbox">
+                            <button type="button">Guardar</button>
+                            <button type="button">Cancelar</button>
+                </div>
+
+                <table>
+                    <thead>
+                        <thead>Edición de notificación</th>
+                    </thead>
+                    <tr>
+                        <td>Medio</td>
+                        <td><button>Editar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Fecha</td>
+                        <td><button>Editar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Destinatarios</td>
+                        <td><button>Editar</button></td>
+                    </tr>
+                </table>
+                <button type="submit">Cargar plantilla</button>
+                <button type="button">Guardar</button>
+                <button type="button">Cancelar</button>
+
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
