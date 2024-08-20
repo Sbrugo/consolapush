@@ -11,14 +11,14 @@
         <form>
             <fieldset>
                 <legend>
-                    <h2>Edición de notificaciones</h2>
+                    <h2>Vista de las notificaciones</h2>
                 </legend>
             
                 <label for="nombre">Nombre de la notificación</label>
-                <input type="text" placeholder="Prevení el dengue">
+                <input type="text" placeholder="Notificación 1">
 
                 <label for="campania">Campaña</label>
-                <input type="text" placeholder="Dengue">              
+                <input type="text" placeholder="Campaña A">              
 
                 <label for="cuerpo">Cuerpo del mensaje</label>
                 <textarea placeholder="Es muy importante descartar todos los objetos que puedan servir de criadero del mosquito. Recordá acercarte a un centro de salud en caso de que presentes síntomas. Para más información ingresa a argentina.gob.ar/dengue"></textarea>
@@ -54,24 +54,22 @@
 
                 <table>
                     <thead>
-                        <thead>Edición de notificación</th>
+                        <thead>Configuración de notificación</th>
                     </thead>
                     <tr>
                         <td>Medio</td>
-                        <td><button>Editar</button></td>
+                        <td><button onclick="location.replace('./medio.html')">Ver</button></td>
                     </tr>
                     <tr>
                         <td>Fecha</td>
-                        <td><button>Editar</button></td>
+                        <td><button>Ver</button></td>
                     </tr>
                     <tr>
                         <td>Destinatarios</td>
-                        <td><button>Editar</button></td>
+                        <td><button>Ver</button></td>
                     </tr>
                 </table>
-                <button type="submit">Cargar plantilla</button>
-                <button type="button">Guardar</button>
-                <button type="button">Cancelar</button>
+                <button type="button" onclick="location.replace('./index.html')">Volver</button>
 
             </fieldset>
         </form>

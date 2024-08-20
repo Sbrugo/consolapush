@@ -14,14 +14,14 @@
                     <h2>Nueva notificación</h2>
                 </legend>
             
-                <label for="nombre">Nombre de la notificación</label>
-                <input type="text" placeholder="Prevení el dengue">
+                <label for="nombre">Nombre de la notificación *</label>
+                <input type="text" placeholder="Ingresar el nombre de la notificación">
 
-                <label for="campania">Campaña</label>
-                <input type="text" placeholder="Dengue">              
+                <label for="campania">CAMPAÑA</label>
+                <input type="text" placeholder="Seleccioná la campaña">              
 
                 <label for="cuerpo">Cuerpo del mensaje</label>
-                <textarea placeholder="Es muy importante descartar todos los objetos que puedan servir de criadero del mosquito. Recordá acercarte a un centro de salud en caso de que presentes síntomas. Para más información ingresa a argentina.gob.ar/dengue"></textarea>
+                <textarea placeholder="Ingresar el cuerpo del mensaje"></textarea>
                 <figcaption>Extensión máxima: 65 carácteres</figcaption>
 
                 <label for="imagen">Imagen</label>
@@ -70,8 +70,8 @@
                     </tr>
                 </table>
                 <button type="submit">Cargar plantilla</button>
-                <button type="button">Guardar</button>
-                <button type="button">Cancelar</button>
+                <button type="button">Crear</button>
+                <button type="button" onclick="location.replace('./notificaciones.html')">Cancelar</button>
 
             </fieldset>
         </form>
