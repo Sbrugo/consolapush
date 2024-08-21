@@ -44,19 +44,33 @@
 
     </header>
     <main>
-        <h1>Vista de medio</h1>
-        
-        <div class="checkbox">
-            <input type="checkbox" id="sms" name="sms" value="sms">
-            <label for="destacada">SMS</label><br>
+        <h1>Campañas</h1>
+        <section id="notificacion_en_proceso">
+            <table>
+                <thead>
+                    <th>Nombre</th>
+                </thead>
+                <tr>
+                    <td>Campaña A</td>
+                    <td><button onclick="location.replace('./editar.html')">Editar</button></td>
+                </tr>
+                <tr>
+                    <td>Notificación B</td>
+                    <td><button>Editar</button></td>
+                </tr>
+                <tr>
+                    <td>Notificación C</td>
+                    <td><button>Editar</button></td>
+                </tr>
+                <tr>
+                    <td>Notificación D</td>
+                    <td><button>Editar</button></td>
+                </tr>
+            </table>
+            <button onclick="location.replace('./nueva.html')">+ Nueva campaña</button>
+            <button type="button" onclick="location.replace('../notificaciones/index.html')">Cancelar</button>
 
-            <input type="checkbox" id="push" name="push" value='push"'>
-            <label for="novedades"> PUSH </label><br>
-
-            <input type="checkbox" id="correo" name="correo" value='correo"'>
-            <label for="novedades"> CORREO </label><br>
-        </div>
-
+        </section>
     </main>
     <!--Este script solo funciona sobre el encabezado.-->
     <script src="../layout/script.js"></script>

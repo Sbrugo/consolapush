@@ -44,19 +44,20 @@
 
     </header>
     <main>
-        <h1>Vista de medio</h1>
-        
-        <div class="checkbox">
-            <input type="checkbox" id="sms" name="sms" value="sms">
-            <label for="destacada">SMS</label><br>
+        <form>
+            <fieldset>
+                <legend>
+                    <h2>Edición de campaña</h2>
+                </legend>
 
-            <input type="checkbox" id="push" name="push" value='push"'>
-            <label for="novedades"> PUSH </label><br>
+                <label for="campania">Nombre de la campaña</label>
+                <input type="text" placeholder="Campaña A">              
 
-            <input type="checkbox" id="correo" name="correo" value='correo"'>
-            <label for="novedades"> CORREO </label><br>
-        </div>
+                <button type="button">Crear</button>
+                <button type="button" onclick="location.replace('./index.html')">Cancelar</button>
 
+            </fieldset>
+        </form>
     </main>
     <!--Este script solo funciona sobre el encabezado.-->
     <script src="../layout/script.js"></script>

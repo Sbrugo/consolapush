@@ -4,9 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilos.css">
+    <!--Este archivo de estilo debería ser eliminado con el encabezado(header)-->
+    <!--Este archivo de estilo solo estiliza el encabezado(header)-->
+    <link rel="stylesheet" href="../layout/estilo.css">
     <title>Document</title>
 </head>
 <body>
+    <!--El header debería ser inyectado ya que es un componente reutilizable pero 
+    en esta instancia se agrega la etiqueta directamente en el archivo-->
+    <header>
+        
+        <nav>
+            <ul class="main-menu">
+                <li>
+                    <button class="menu-btn">Notificaciones</button>
+                    <ul class="submenu">
+                        <li onclick="location.replace('../notificaciones/index.html')">Panel de notificaciones</li>
+                        <li onclick="location.replace('../campañas/index.html')">Campañas</li>
+                        <li>Plantillas</li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="menu-btn">Estadísticas</button>
+                </li>
+                <li>
+                    <button class="menu-btn">Configuración</button>
+                    <ul class="submenu">
+                        <li>Usuarios</li>
+                        <li>Rol</li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="menu-btn">Raúl Perez</button>
+                    <ul class="submenu">
+                        <li>Salir</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
     <main>
         <form>
             <fieldset>
@@ -70,5 +107,7 @@
             </fieldset>
         </form>
     </main>
+    <!--Este script solo funciona sobre el encabezado.-->
+    <script src="../layout/script.js"></script>
 </body>
 </html>

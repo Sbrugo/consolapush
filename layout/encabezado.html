@@ -3,26 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilo.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>Notificaciones</li>
-                <li>Estadisticas</li>
-                <li>Configuración</li>
-            </ul>
-        </nav>
-        <p>Sofia Brugo Spinetto</p>
-
+        
         <nav>
             <ul class="main-menu">
                 <li>
                     <button class="menu-btn">Notificaciones</button>
                     <ul class="submenu">
-                        <li>Panel de notificaciones</li>
-                        <li>Campañas</li>
+                        <li onclick="location.replace('../notificaciones/index.html')">Panel de notificaciones</li>
+                        <li onclick="location.replace('../campañas/index.html')">Campañas</li>
                         <li>Plantillas</li>
                     </ul>
                 </li>
@@ -36,9 +29,16 @@
                         <li>Rol</li>
                     </ul>
                 </li>
+                <li>
+                    <button class="menu-btn">Raúl Perez</button>
+                    <ul class="submenu">
+                        <li>Salir</li>
+                    </ul>
+                </li>
             </ul>
         </nav>
 
     </header>
+    <script src="script.js"></script>
 </body>
 </html>
