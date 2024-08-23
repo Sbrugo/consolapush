@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,107 +8,134 @@
     <!--Este archivo de estilo debería ser eliminado con el encabezado(header)-->
     <!--Este archivo de estilo solo estiliza el encabezado(header)-->
     <link rel="stylesheet" href="../layout/estilo.css">
+    <link rel="stylesheet" href="../layout/estilo.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../poncho.min.css">
     <title>Document</title>
 </head>
+
 <body>
     <!--El header debería ser inyectado ya que es un componente reutilizable pero 
     en esta instancia se agrega la etiqueta directamente en el archivo-->
     <header>
-        
-        <nav>
-            <ul class="main-menu">
-                <li>
-                    <button class="menu-btn">Notificaciones</button>
-                    <ul class="submenu">
-                        <li onclick="location.replace('../notificaciones/index.html')">Panel de notificaciones</li>
-                        <li onclick="location.replace('../campañas/index.html')">Campañas</li>
-                        <li>Plantillas</li>
-                    </ul>
-                </li>
-                <li>
-                    <button class="menu-btn">Estadísticas</button>
-                </li>
-                <li>
-                    <button class="menu-btn">Configuración</button>
-                    <ul class="submenu">
-                        <li>Usuarios</li>
-                        <li>Rol</li>
-                    </ul>
-                </li>
-                <li>
-                    <button class="menu-btn">Raúl Perez</button>
-                    <ul class="submenu">
-                        <li>Salir</li>
-                    </ul>
-                </li>
-            </ul>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid container">
+                <div class="row">
+                    <div id="alignment-example" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav main-menu">
+                            <li class="">
+                                <!--<button class="menu-btn">Notificaciones</button>
+                         <ul class="submenu">
+                            <li onclick="location.replace('../notificaciones/index.html')">Panel de notificaciones</li>
+                            <li onclick="location.replace('../campañas/index.html')">Campañas</li>
+                            <li>Plantillas</li>
+                        </ul> -->
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Notificaciones<span class="caret"></span></a>
+                                <ul class="dropdown-menu" aria-labelledby="Notificaciones">
+                                    <li><a href="../notificaciones/index.html">Panel de notificaciones</a></li>
+                                    <li><a href="../campañas/index.html">Campañas</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- <button class="menu-btn">Estadísticas</button> -->
+                                <a href="">Estadísticas</a>
+                            </li>
+                            <li class="">
+                                <!-- <button class="menu-btn">Configuración</button> -->
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Configuración<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="">Usuarios</a></li>
+                                    <li><a href="">Rol</a></li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <!-- <button class="menu-btn">Raúl Perez</button> -->
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Raúl Perez<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="">Salir</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
-
     </header>
     <main>
-        <form>
-            <fieldset>
-                <legend>
-                    <h2>Edición de notificaciones</h2>
-                </legend>
-            
-                <label for="nombre">Nombre de la notificación</label>
-                <input type="text" placeholder="Prevení el dengue">
-
-                <label for="campania">Campaña</label>
-                <input type="text" placeholder="Dengue">              
-
-                <label for="cuerpo">Cuerpo del mensaje</label>
-                <textarea placeholder="Es muy importante descartar todos los objetos que puedan servir de criadero del mosquito. Recordá acercarte a un centro de salud en caso de que presentes síntomas. Para más información ingresa a argentina.gob.ar/dengue"></textarea>
-                <figcaption>Extensión máxima: 65 carácteres</figcaption>
-
-                <label for="imagen">Imagen</label>
-                <input type="file">
-                <figcaption>Extensión máxima de tamaño: 1mb. Formatos aceptados: JPEG, PNG, BMP</figcaption>
-                <div>
+        <div class="container">
+            <div class="raw">
+                <form>
+                    <fieldset>
+                        <legend>
+                            <h2>Edición de notificaciones</h2>
+                        </legend>
+                        <label for="nombre">Nombre de la notificación</label>
+                        <input type="text" placeholder="Prevení el dengue">
+                        <label for="campania">Campaña</label>
+                        <input type="text" placeholder="Dengue">
+                        <label for="cuerpo">Cuerpo del mensaje</label>
+                        <textarea placeholder="Es muy importante descartar todos los objetos que puedan servir de criadero del mosquito. Recordá acercarte a un centro de salud en caso de que presentes síntomas. Para más información ingresa a argentina.gob.ar/dengue"></textarea>
+                        <figcaption>Extensión máxima: 65 carácteres</figcaption>
+                        <label for="imagen">Imagen</label>
+                        <input type="file">
+                        <figcaption>Extensión máxima de tamaño: 1mb. Formatos aceptados: JPEG, PNG, BMP</figcaption>
+                        <div>
                             <input type="checkbox" id="destacada" name="destacada" value="Notificacion destacada">
                             <label for="destacada">Imágen icono</label><br>
-
                             <input type="checkbox" id="novedades" name="novedades" value='Seccion "novedades"'>
                             <label for="novedades"> Imágen hero </label><br>
-
-                </div>
-
-                <label for="link">Link</label>
-                <input>
-
-                <div class="checkbox">
+                        </div>
+                        <label for="link">Link</label>
+                        <input>
+                        <div class="checkbox">
                             <input type="checkbox" id="destacada" name="destacada" value="Notificacion destacada">
                             <label for="destacada">Notificación destacada</label><br>
-            
                             <input type="checkbox" id="novedades" name="novedades" value='Seccion "novedades"'>
                             <label for="novedades"> Sección "novedades" </label><br>
-                </div>
-
-                <table>
-                    <thead>
-                        <thead>Edición de notificación</th>
-                    </thead>
-                    <tr>
-                        <td>Medio</td>
-                        <td><button>Editar</button></td>
-                    </tr>
-                    <tr>
-                        <td>Fecha</td>
-                        <td><button>Editar</button></td>
-                    </tr>
-                    <tr>
-                        <td>Destinatarios</td>
-                        <td><button>Editar</button></td>
-                    </tr>
-                </table>
-                <button type="submit">Cargar plantilla</button>
-                <button type="button">Guardar</button>
-                <button type="button" onclick="location.replace('./index.html')">Cancelar</button>
-            </fieldset>
-        </form>
+                        </div>
+                        <table>
+                            <thead>
+                                <thead>Edición de notificación</th>
+                                </thead>
+                                <tr>
+                                    <td>Medio</td>
+                                    <td><button>Editar</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Fecha</td>
+                                    <td><button>Editar</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Destinatarios</td>
+                                    <td><button>Editar</button></td>
+                                </tr>
+                        </table>
+                        <button type="submit">Cargar plantilla</button>
+                        <button type="button">Guardar</button>
+                        <button type="button" onclick="location.replace('./index.html')">Cancelar</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
     </main>
-    <!--Este script solo funciona sobre el encabezado.-->
-    <script src="../layout/script.js"></script>
+    <!--Este script solo funciona sobre el encabezado.
+    <script src="../layout/script.js"></script>-->
+    <!-- jQuery library -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Initialize Bootstrap functionality -->
+    <script>
+    // Initialize tooltip component
+    $(function() {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+
+    // Initialize popover component
+    $(function() {
+        $('[data-toggle="popover"]').popover()
+    })
+    </script>
 </body>
+
 </html>
