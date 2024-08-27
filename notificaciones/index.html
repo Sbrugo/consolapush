@@ -18,11 +18,12 @@
                 <div class="row">
                     <div id="alignment-example" class="collapse navbar-collapse">
                         <ul class="nav navbar-nav main-menu">
-                            <li class=""
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Notificaciones<span class="caret"></span></a>
+                            <li class="">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="Notificaciones">Notificaciones<span class="caret"></span></a>
                                 <ul class="dropdown-menu" aria-labelledby="Notificaciones">
                                     <li><a href="../notificaciones/index.html">Panel de notificaciones</a></li>
                                     <li><a href="../campañas/index.html">Campañas</a></li>
+                                    <li><a href="../plantillas/index.html">Plantillas</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -49,72 +50,112 @@
     </header>
     <main>
         <div class="container">
-            <div class="raw">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="h3 m-t-2">Panel de notificaciones</h1>
+                    <button onclick="location.replace('./nueva.html')" class="btn btn-success btn-sm pull-right">+ Nueva notificación</button>
+                    <div>
+                        <section>
+                            <h2 class="h4">Notificaciones en proceso</h2>
+                            <table class="table table-responsive-poncho table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Campaña</th>
+                                    <th>Fecha</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Prevení el Dengue</td>
+                                    <td>Dengue</td>
+                                    <td>AAAA/MM/DD</td>
+                                    <td><button  class="btn btn-primary btn-sm" onclick="location.replace('./editar.html')">Editar</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Notificación 6</td>
+                                    <td>-</td>
+                                    <td>AAAA/MM/DD</td>
+                                    <td><button class="btn btn-primary btn-sm">Editar</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Notificación 7</td>
+                                    <td>Campaña C</td>
+                                    <td>AAAA/MM/DD</td>
+                                    <td><button class="btn btn-primary btn-sm">Editar</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Notificación 8</td>
+                                    <td>Campaña B</td>
+                                    <td>AAAA/MM/DD</td>
+                                    <td><button class="btn btn-primary btn-sm">Editar</button></td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </section>
+                        <section>
+                            <h2 class="h4">Notificaciones realizadas</h2>
+                            <table class="table table-responsive-poncho table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Campaña</th>
+                                    <th>Fecha</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Notificación 1</td>
+                                    <td>Campaña A</td>
+                                    <td>AAAA/MM/DD</td>
+                                    <td><button class="btn btn-primary btn-sm" onclick="location.replace('./ver.html')">Ver</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Notificación 2</td>
+                                    <td>Campaña B</td>
+                                    <td>AAAA/MM/DD</td>
+                                    <td><button class="btn btn-primary btn-sm">Ver</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Notificación 3</td>
+                                    <td>Campaña C</td>
+                                    <td>AAAA/MM/DD</td>
+                                    <td><button class="btn btn-primary btn-sm">Ver</button></td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </section>
+                        <div class="text-center">
+                            <ul class="pagination">
+                                <li class="active">
+                                    <span>1</span>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li><a>3</a></li>
+                                <li><a>4</a></li>
+                                <li><a>5</a></li>
+                                <li><a>6</a></li>
+                                <li><a>7</a></li>
+                                <li><a>8</a></li>
+                                <li><a>9</a></li>
+                                <li class="pager-ellipsis disabled">
+                                    <span>..</span>
+                                </li>
+                                <li class="next">
+                                    <a>></a>
+                                </li>
+                                <li class="pager-last">
+                                    <a>>></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <h1>Panel de notificaciones</h1>
-            <section id="notificacion_en_proceso">
-                <button onclick="location.replace('./nueva.html')">+ Nueva notificación</button>
-                <table class="table table-responsive-poncho">
-                    <thead>
-                        <th>Nombre</th>
-                        <th>Campaña</th>
-                        <th>Fecha</th>
-                        <th>Acciones</th>
-                    </thead>
-                    <tr>
-                        <td>Prevení el Dengue</td>
-                        <td>Dengue</td>
-                        <td>AAAA/MM/DD</td>
-                        <td><button onclick="location.replace('./editar.html')">Editar</button></td>
-                    </tr>
-                    <tr>
-                        <td>Notificación 6</td>
-                        <td>-</td>
-                        <td>AAAA/MM/DD</td>
-                        <td><button>Editar</button></td>
-                    </tr>
-                    <tr>
-                        <td>Notificación 7</td>
-                        <td>Campaña C</td>
-                        <td>AAAA/MM/DD</td>
-                        <td><button>Editar</button></td>
-                    </tr>
-                    <tr>
-                        <td>Notificación 8</td>
-                        <td>Campaña B</td>
-                        <td>AAAA/MM/DD</td>
-                        <td><button>Editar</button></td>
-                    </tr>
-                </table>
-            </section>
-            <section id="notificaciones_realizadas">
-                <table class="table table-responsive-poncho">
-                    <thead>
-                        <th>Nombre</th>
-                        <th>Campaña</th>
-                        <th>Fecha</th>
-                        <th>Acciones</th>
-                    </thead>
-                    <tr>
-                        <td>Notificación 1</td>
-                        <td>Campaña A</td>
-                        <td>AAAA/MM/DD</td>
-                        <td><button onclick="location.replace('./ver.html')">Ver</button></td>
-                    </tr>
-                    <tr>
-                        <td>Notificación 2</td>
-                        <td>Campaña B</td>
-                        <td>AAAA/MM/DD</td>
-                        <td><button>Ver</button></td>
-                    </tr>
-                    <tr>
-                        <td>Notificación 3</td>
-                        <td>Campaña C</td>
-                        <td>AAAA/MM/DD</td>
-                        <td><button>Ver</button></td>
-                    </tr>
-                </table>
-            </section>
         </div>
     </main>
     <!-- jQuery library -->

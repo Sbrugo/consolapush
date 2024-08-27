@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,18 @@
     <link rel="stylesheet" href="../poncho.min.css">
     <title>Document</title>
 </head>
+
 <body>
     <!--El header debería ser inyectado ya que es un componente reutilizable pero 
     en esta instancia se agrega la etiqueta directamente en el archivo-->
     <header>
-        
         <nav class="navbar navbar-default">
             <div class="container-fluid container">
                 <div class="row">
                     <div id="alignment-example" class="collapse navbar-collapse">
                         <ul class="nav navbar-nav main-menu">
                             <li class="">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="Notificaciones">Notificaciones<span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Notificaciones<span class="caret"></span></a>
                                 <ul class="dropdown-menu" aria-labelledby="Notificaciones">
                                     <li><a href="../notificaciones/index.html">Panel de notificaciones</a></li>
                                     <li><a href="../campañas/index.html">Campañas</a></li>
@@ -46,37 +47,51 @@
                 </div>
             </div>
         </nav>
-
     </header>
     <main>
-       <div class="container">
-        <div class="raw">
-            <form>
-                <fieldset>
-                    <legend>
-                        <h2>Nueva campaña</h2>
-                    </legend>
-    
-                    <label>Nombre de la campaña</label>
-                    <input type="text" placeholder="Ingresar nombre de la campaña">              
-    
-                    <button type="button">Crear</button>
-                    <button type="button" onclick="location.replace('./index.html')">Cancelar</button>
-    
-                </fieldset>
-            </form>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-success btn-sm" onclick="location.replace('./nueva.html')">+ Nueva plantilla</button>
+                    <h1>Plantillas</h1>
+                    <section id="notificacion_en_proceso">
+                        <table class="table table-responsive-poncho table-striped">
+                            <thead>
+                                <th>Nombre</th>
+                                <th>Accion</th>
+                            </thead>
+                            <tr>
+                                <td>Dengue A</td>
+                                <td><button class="btn btn-primary btn-sm" onclick="location.replace('./editar.html')">Editar</button></td>
+                            </tr>
+                            <tr>
+                                <td>Dengue B</td>
+                                <td><button class="btn btn-primary btn-sm">Editar</button></td>
+                            </tr>
+                            <tr>
+                                <td>Vacunación A</td>
+                                <td><button class="btn btn-primary btn-sm">Editar</button></td>
+                            </tr>
+                            <tr>
+                                <td>Vacunación B</td>
+                                <td><button class="btn btn-primary btn-sm">Editar</button></td>
+                            </tr>
+                        </table>
+                        <button type="button" class="btn btn-default btn-tag" onclick="location.replace('../notificaciones/index.html')">Cancelar</button>
+                    </section>
+                </div>
+            </div>
         </div>
-       </div>
-        
     </main>
-    <!-- jQuery library -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <!-- Initialize Bootstrap functionality -->
-    <script>
-    // Initialize tooltip component
-    $(function() {
+</body>
+<!-- jQuery library -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!-- Initialize Bootstrap functionality -->
+<script>
+// Initialize tooltip component
+$(function() {
     $('[data-toggle="tooltip"]').tooltip()
 })
 
@@ -85,5 +100,5 @@ $(function() {
     $('[data-toggle="popover"]').popover()
 })
 </script>
-</body>
+
 </html>

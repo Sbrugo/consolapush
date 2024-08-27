@@ -21,7 +21,7 @@
                         <ul class="nav navbar-nav main-menu">
                             <li class="">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                    aria-haspopup="true" aria-expanded="false" id="Notificaciones">Notificaciones<span
+                                    aria-haspopup="true" aria-expanded="false">Notificaciones<span
                                         class="caret"></span></a>
                                 <ul class="dropdown-menu" aria-labelledby="Notificaciones">
                                     <li><a href="../notificaciones/index.html">Panel de notificaciones</a></li>
@@ -60,23 +60,23 @@
                 <form>
                     <fieldset>
                         <legend>
-                            <h2>Vista de las notificaciones</h2>
+                            <h2>Edición de plantilla</h2>
                         </legend>
 
-                        <label for="nombre">Nombre de la notificación</label>
-                        <input type="text" placeholder="Notificación 1">
+                        <label for="nombre">Título de la plantilla</label>
+                        <input type="text" placeholder="Prevení el Dengue">
+                        <figcaption>Extensión máxima: 65 carácteres</figcaption>
 
-                        <label>Campaña</label>
-                        <input type="text" placeholder="Campaña A">
 
-                        <label>Cuerpo del mensaje</label>
+                        <label for="campania">Texto de la plantilla</label>
                         <textarea
                             placeholder="Es muy importante descartar todos los objetos que puedan servir de criadero del mosquito. Recordá acercarte a un centro de salud en caso de que presentes síntomas. Para más información ingresa a argentina.gob.ar/dengue"></textarea>
                         <figcaption>Extensión máxima: 65 carácteres</figcaption>
 
-                        <label>Imagen</label>
+                        <label for="imagen">Imagen</label>
                         <input type="file">
                         <figcaption>Extensión máxima de tamaño: 1mb. Formatos aceptados: JPEG, PNG, BMP</figcaption>
+
                         <div class="form-group item-form">
                             <input type="radio" value="Notificacion destacada">
                             <label class="radio-inline">imagen ícono</label><br>
@@ -86,12 +86,47 @@
 
                         </div>
 
-                        <label>Link</label>
+                        <label for="link">Link</label>
                         <input>
+
+                        <div class="checkbox">
+                            <input type="checkbox" id="destacada" name="destacada" value="Notificacion destacada">
+                            <label for="destacada">Notificación destacada</label><br>
+
+                            <input type="checkbox" id="novedades" name="novedades" value='Seccion "novedades"'>
+                            <label for="novedades"> Sección "novedades" </label><br>
+                        </div>
+
+                        <div class="checkbox">
+                            <button type="button">Guardar</button>
+                            <button type="button">Cancelar</button>
+                        </div>
+
+                        <table class="table table-responsive-poncho table-striped">
+                            <thead>
+                                <thead>Configuración de notificación</th>
+                                </thead>
+                                <tr>
+                                    <td>Medio</td>
+                                    <td><button onclick="location.replace('./medio.html')">Ver</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Fecha</td>
+                                    <td><button>Ver</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Destinatarios</td>
+                                    <td><button>Ver</button></td>
+                                </tr>
+                        </table>
+                        <button type="button" onclick="location.replace('./index.html')">Volver</button>
+
                     </fieldset>
                 </form>
             </div>
         </div>
+
+
     </main>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Bootstrap JS -->
