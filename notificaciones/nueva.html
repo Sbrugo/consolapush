@@ -21,11 +21,13 @@
                         <ul class="nav navbar-nav main-menu">
                             <li class="">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                    aria-haspopup="true" aria-expanded="false">Notificaciones<span
+                                    aria-haspopup="true" aria-expanded="false" id="Notificaciones">Notificaciones<span
                                         class="caret"></span></a>
                                 <ul class="dropdown-menu" aria-labelledby="Notificaciones">
                                     <li><a href="../notificaciones/index.html">Panel de notificaciones</a></li>
                                     <li><a href="../campañas/index.html">Campañas</a></li>
+                                    <li><a href="../plantillas/index.html">Plantillas</a></li>
+
                                 </ul>
                             </li>
                             <li>
@@ -55,77 +57,95 @@
     </header>
     <main>
         <div class="container">
-            <div class="raw">
-                <form>
-                    <fieldset>
-                        <legend>
-                            <h2>Nueva notificación</h2>
-                        </legend>
-
-                        <label for="nombre">Nombre de la notificación *</label>
-                        <input type="text" placeholder="Ingresar el nombre de la notificación">
-
-                        <label for="campania">CAMPAÑA</label>
-                        <input type="text" placeholder="Seleccioná la campaña">
-
-                        <label for="cuerpo">Cuerpo del mensaje</label>
-                        <textarea placeholder="Ingresar el cuerpo del mensaje"></textarea>
-                        <figcaption>Extensión máxima: 65 carácteres</figcaption>
-
-                        <label for="imagen">Imagen</label>
-                        <input type="file">
-                        <figcaption>Extensión máxima de tamaño: 1mb. Formatos aceptados: JPEG, PNG, BMP</figcaption>
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="h4">Nueva notificación</h1>
+                    <button type="submit" class="btn btn-default btn-tag pull-right">Cargar plantilla</button>
+                    <form>
                         <div>
-                            <input type="checkbox" id="destacada" name="destacada" value="Notificacion destacada">
-                            <label for="destacada">Imágen icono</label><br>
-
-                            <input type="checkbox" id="novedades" name="novedades" value='Seccion "novedades"'>
-                            <label for="novedades"> Imágen hero </label><br>
-
+                            <fieldset>
+                                <div class="form-item webform-component webform-component-textfield webform-component--textfield form-group form-item form-item-submitted-textfield form-type-textfield form-group">
+                                    <label class="control-label">Nombre de la notificación *</label>
+                                    <input class="form-control form-text required" type="text" placeholder="Ingresar el nombre de la notificación">
+                                </div>
+                                <div class="form-item webform-component webform-component-textfield webform-component--textfield form-group form-item form-item-submitted-textfield form-type-textfield form-group">
+                                    <label class="control-label">Campaña</label>
+                                    <input class="form-control form-text required" type="text" placeholder="Seleccioná la campaña">
+                                </div>
+                                <div class="class=form-item webform-component webform-component-textarea webform-component--textarea form-group form-item form-item-submitted-textarea form-type-textarea form-group">
+                                    <label class="control-label">Cuerpo del mensaje</label>
+                                    <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea">
+                                        <textarea class="form-control form-textarea required" cols="60" rows="5" placeholder="Ingresar el cuerpo del mensaje"></textarea>
+                                    </div>
+                                    <figure>
+                                        <figcaption>Extensión máxima: 65 carácteres</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="form-item webform-component webform-component-file webform-component--archivo form-group form-item form-item-submitted-archivo form-type-managed-file form-group">
+                                    <label class="control-label">Imagen</label>
+                                    <div class="form-managed-file input-group">
+                                        <input class="form-control form-file" type="file">
+                                    </div>
+                                    <figure>
+                                        <figcaption>Extensión máxima de tamaño: 1mb. Formatos aceptados: JPEG, PNG, BMP</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="form-item webform-component webform-component-textfield webform-component--textfield form-group form-item form-item-submitted-textfield form-type-textfield form-group">
+                                    <label class="control-label">Link</label>
+                                    <input class="form-control form-text required">
+                                </div>
+            
+                                <fieldset>
+                                    <div class="form-group item-form">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Notificación destacada
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Sección novedades
+                                            </label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                           
+        
+                                <table class="table table-responsive-poncho table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    Edición de campaña
+                                                </th>
+                                                <th>
+                                                    Acción
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Medio</td>
+                                                <td><button class="btn btn-primary btn-sm">Seleccionar</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Fecha</td>
+                                                <td><button class="btn btn-primary btn-sm">Seleccionar</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Destinatarios</td>
+                                                <td><button class="btn btn-primary btn-sm">Seleccionar</button></td>
+                                            </tr>
+                                        </tbody>
+                                </table>
+                                
+                            </fieldset>
                         </div>
-
-                        <label for="link">Link</label>
-                        <input>
-
-                        <div class="checkbox">
-                            <input type="checkbox" id="destacada" name="destacada" value="Notificacion destacada">
-                            <label for="destacada">Notificación destacada</label><br>
-
-                            <input type="checkbox" id="novedades" name="novedades" value='Seccion "novedades"'>
-                            <label for="novedades"> Sección "novedades" </label><br>
-                        </div>
-
-                        <div class="checkbox">
-                            <button type="button">Guardar</button>
-                            <button type="button" onclick="location.replace('./index.html')">Cancelar</button>
-                        </div>
-
-                        <table class="table table-responsive-poncho table-striped">
-                            <thead>
-                                <thead>Edición de notificación</th>
-                                </thead>
-                                <tr>
-                                    <td>Medio</td>
-                                    <td><button>Editar</button></td>
-                                </tr>
-                                <tr>
-                                    <td>Fecha</td>
-                                    <td><button>Editar</button></td>
-                                </tr>
-                                <tr>
-                                    <td>Destinatarios</td>
-                                    <td><button>Editar</button></td>
-                                </tr>
-                        </table>
-                        <button type="submit">Cargar plantilla</button>
-                        <button type="button">Crear</button>
-                        <button type="button" onclick="location.replace('./index.html')">Cancelar</button>
-
-                    </fieldset>
-                </form>
+                        <button type="button" class="btn btn-success btn-sm">Crear</button>
+                        <button type="button" onclick="location.replace('./index.html')" class="btn btn-danger btn-sm">Cancelar</button>
+                    </form>
+                </div>
             </div>
         </div>
-
     </main>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Bootstrap JS -->

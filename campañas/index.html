@@ -19,10 +19,11 @@
                     <div id="alignment-example" class="collapse navbar-collapse">
                         <ul class="nav navbar-nav main-menu">
                             <li class="">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Notificaciones<span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="Notificaciones">Notificaciones<span class="caret"></span></a>
                                 <ul class="dropdown-menu" aria-labelledby="Notificaciones">
                                     <li><a href="../notificaciones/index.html">Panel de notificaciones</a></li>
                                     <li><a href="../campañas/index.html">Campañas</a></li>
+                                    <li><a href="../plantillas/index.html">Plantillas</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -51,52 +52,58 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
+                    <button type="button" class="btn btn-success btn-sm" onclick="location.replace('./nueva.html')">+ Nueva campaña</button>
                     <h1>Campañas</h1>
-                    <section id="notificacion_en_proceso">
+                    <section>
+                        <h2>Notificaciones en proceso</h2>
                         <table class="table table-responsive-poncho table-striped">
                             <thead>
-                                <th>Nombre</th>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Accion</th>
+                                </tr>
                             </thead>
-                            <tr>
-                                <td>Campaña A</td>
-                                <td><button onclick="location.replace('./editar.html')">Editar</button></td>
-                            </tr>
-                            <tr>
-                                <td>Notificación B</td>
-                                <td><button>Editar</button></td>
-                            </tr>
-                            <tr>
-                                <td>Notificación C</td>
-                                <td><button>Editar</button></td>
-                            </tr>
-                            <tr>
-                                <td>Notificación D</td>
-                                <td><button>Editar</button></td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td>Campaña A</td>
+                                    <td><button class="btn btn-primary btn-sm" onclick="location.replace('./editar.html')">Editar</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Notificación B</td>
+                                    <td><button class="btn btn-primary btn-sm">Editar</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Notificación C</td>
+                                    <td><button class="btn btn-primary btn-sm">Editar</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Notificación D</td>
+                                    <td><button class="btn btn-primary btn-sm">Editar</button></td>
+                                </tr>
+                            </tbody>
                         </table>
-                        <button type="button" class="btn btn-success" onclick="location.replace('./nueva.html')">+ Nueva campaña</button>
-                        <button type="button" class="btn bg-danger text-white" onclick="location.replace('../notificaciones/index.html')">Cancelar</button>
+                        <button type="button" class="btn btn-default btn-tag" onclick="location.replace('../notificaciones/index.html')">Cancelar</button>
                     </section>
                 </div>
             </div>
         </div>
     </main>
+    <!-- jQuery library -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Initialize Bootstrap functionality -->
+    <script>
+    // Initialize tooltip component
+    $(function() {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+    
+    // Initialize popover component
+    $(function() {
+        $('[data-toggle="popover"]').popover()
+    })
+    </script>
 </body>
-<!-- jQuery library -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- Bootstrap JS -->
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<!-- Initialize Bootstrap functionality -->
-<script>
-// Initialize tooltip component
-$(function() {
-    $('[data-toggle="tooltip"]').tooltip()
-})
-
-// Initialize popover component
-$(function() {
-    $('[data-toggle="popover"]').popover()
-})
-</script>
 
 </html>

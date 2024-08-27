@@ -20,10 +20,11 @@
                     <div id="alignment-example" class="collapse navbar-collapse">
                         <ul class="nav navbar-nav main-menu">
                             <li class="">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Notificaciones<span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="Notificaciones">Notificaciones<span class="caret"></span></a>
                                 <ul class="dropdown-menu" aria-labelledby="Notificaciones">
                                     <li><a href="../notificaciones/index.html">Panel de notificaciones</a></li>
                                     <li><a href="../campañas/index.html">Campañas</a></li>
+                                    <li><a href="../plantillas/index.html">Plantillas</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -50,58 +51,87 @@
     </header>
     <main>
         <div class="container">
-            <div class="raw">
-                <form>
-                    <fieldset>
-                        <legend>
-                            <h2>Edición de notificaciones</h2>
-                        </legend>
-                        <label for="nombre">Nombre de la notificación</label>
-                        <input type="text" placeholder="Prevení el dengue">
-                        <label for="campania">Campaña</label>
-                        <input type="text" placeholder="Dengue">
-                        <label for="cuerpo">Cuerpo del mensaje</label>
-                        <textarea placeholder="Es muy importante descartar todos los objetos que puedan servir de criadero del mosquito. Recordá acercarte a un centro de salud en caso de que presentes síntomas. Para más información ingresa a argentina.gob.ar/dengue"></textarea>
-                        <figcaption>Extensión máxima: 65 carácteres</figcaption>
-                        <label for="imagen">Imagen</label>
-                        <input type="file">
-                        <figcaption>Extensión máxima de tamaño: 1mb. Formatos aceptados: JPEG, PNG, BMP</figcaption>
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="h4">Edición de notificaciones</h1>
+                    <button type="submit" class="btn btn-default btn-tag pull-right">Cargar plantilla</button>
+                    <form>
                         <div>
-                            <input type="checkbox" id="destacada" name="destacada" value="Notificacion destacada">
-                            <label for="destacada">Imágen icono</label><br>
-                            <input type="checkbox" id="novedades" name="novedades" value='Seccion "novedades"'>
-                            <label for="novedades"> Imágen hero </label><br>
+                            <fieldset>
+                                <div class="form-item webform-component webform-component-textfield webform-component--textfield form-group form-item form-item-submitted-textfield form-type-textfield form-group">
+                                    <label class="control-label">Nombre de la notificación</label>
+                                    <input class="form-control form-text required" type="text" placeholder="Prevení el dengue">
+                                </div>
+                                <div class="form-item webform-component webform-component-textfield webform-component--textfield form-group form-item form-item-submitted-textfield form-type-textfield form-group">
+                                    <label class="control-label">Campaña</label>
+                                    <input class="form-control form-text required" type="text" placeholder="Dengue">
+                                </div>
+                                <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea">
+                                    <label>Cuerpo del mensaje</label>
+                                    <textarea class="form-control form-textarea required" cols="60" rows="5" placeholder="Es muy importante descartar todos los objetos que puedan servir de criadero del mosquito. Recordá acercarte a un centro de salud en caso de que presentes síntomas. Para más información ingresa a argentina.gob.ar/dengue"></textarea>
+                                    <figure>
+                                        <figcaption>Extensión máxima: 65 carácteres</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="form-item webform-component webform-component-textfield webform-component--textfield form-group form-item form-item-submitted-textfield form-type-textfield form-group">
+                                    <label class="control-label">Imagen</label>
+                                    <input class="form-control form-text required" type="file">
+                                    <figure>
+                                        <figcaption>Extensión máxima de tamaño: 1mb. Formatos aceptados: JPEG, PNG, BMP</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="form-group item-form">
+                                    <input type="radio" value="Notificacion destacada">
+                                    <label class="radio-inline">imagen ícono</label><br>
+        
+                                    <input type="radio" value='Seccion "novedades"'>
+                                    <label class="radio-inline"> imagen hero </label><br>
+        
+                                </div>
+                                <label>Link</label>
+                                <input>
+                                <fieldset>
+                                    <div class="form-group item-form">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Notificación destacada
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Sección novedades
+                                            </label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <table class="table table-responsive-poncho table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Edición de notificación</th>
+                                                <th>Accion</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Medio</td>
+                                                <td><button onclick="location.replace('/medio.html')">Editar</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Fecha</td>
+                                                <td><button>Editar</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Destinatarios</td>
+                                                <td><button>Editar</button></td>
+                                            </tr>
+                                        </tbody>
+                                </table>
+                            </fieldset>
                         </div>
-                        <label for="link">Link</label>
-                        <input>
-                        <div class="checkbox">
-                            <input type="checkbox" id="destacada" name="destacada" value="Notificacion destacada">
-                            <label for="destacada">Notificación destacada</label><br>
-                            <input type="checkbox" id="novedades" name="novedades" value='Seccion "novedades"'>
-                            <label for="novedades"> Sección "novedades" </label><br>
-                        </div>
-                        <table class="table table-responsive-poncho table-striped">
-                            <thead>
-                                <thead>Edición de notificación</th>
-                                </thead>
-                                <tr>
-                                    <td>Medio</td>
-                                    <td><button>Editar</button></td>
-                                </tr>
-                                <tr>
-                                    <td>Fecha</td>
-                                    <td><button>Editar</button></td>
-                                </tr>
-                                <tr>
-                                    <td>Destinatarios</td>
-                                    <td><button>Editar</button></td>
-                                </tr>
-                        </table>
-                        <button type="submit">Cargar plantilla</button>
-                        <button type="button">Guardar</button>
-                        <button type="button" onclick="location.replace('./index.html')">Cancelar</button>
-                    </fieldset>
-                </form>
+                        <button type="button" class="btn btn-success btn-sm">Guardar</button>
+                        <button type="button" onclick="location.replace('./index.html')" class="btn btn-danger btn-sm">Cancelar</button>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
