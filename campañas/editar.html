@@ -26,7 +26,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="">Estadísticas</a>
+                                <a href="../estadisticas/index.html">Estadísticas</a>
                             </li>
                             <li class="">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Configuración<span class="caret"></span></a>
@@ -51,22 +51,21 @@
     <main>
         <div class="container">
             <div class="row">
+                <h1 class="h4">Edición de la campaña</h1>
+                <hr>
                 <form>
                     <fieldset>
-                        <legend>
-                            <h2>Edición de campaña</h2>
-                        </legend>
         
-                        <label>Nombre de la campaña</label>
-                        <input type="text" placeholder="Campaña A">              
-        
-                        <button type="button">Crear</button>
-                        <button type="button" onclick="location.replace('./index.html')">Cancelar</button>
-        
+                        <div class="form-item webform-component webform-component-textfield webform-component--textfield form-group form-item form-item-submitted-textfield form-type-textfield form-group">
+                            <label class="control-label">Nombre de la campaña</label>
+                            <input class="form-control form-text required" type="text" placeholder="Ingresar el nombre de la notificación">
+                        </div>
+                        <button type="button" class="btn btn-success">Guardar</button>
+                            <button type="button" onclick="location.replace('./index.html')" class="btn btn-danger">Cancelar</button>
                     </fieldset>
                 </form>
             </div>
-        </div>
+           </div>
     </main>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

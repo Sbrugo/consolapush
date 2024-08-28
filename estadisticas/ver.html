@@ -13,36 +13,31 @@
     <!--El header debería ser inyectado ya que es un componente reutilizable pero 
     en esta instancia se agrega la etiqueta directamente en el archivo-->
     <header>
-
         <nav class="navbar navbar-default">
             <div class="container-fluid container">
                 <div class="row">
                     <div id="alignment-example" class="collapse navbar-collapse">
                         <ul class="nav navbar-nav main-menu">
                             <li class="">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                    aria-haspopup="true" aria-expanded="false" id="Notificaciones">Notificaciones<span
-                                        class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="Notificaciones">Notificaciones<span class="caret"></span></a>
                                 <ul class="dropdown-menu" aria-labelledby="Notificaciones">
                                     <li><a href="../notificaciones/index.html">Panel de notificaciones</a></li>
                                     <li><a href="../campañas/index.html">Campañas</a></li>
+                                    <li><a href="../plantillas/index.html">Plantillas</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="">Estadísticas</a>
                             </li>
                             <li class="">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                    aria-haspopup="true" aria-expanded="false">Configuración<span
-                                        class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Configuración<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="">Usuarios</a></li>
                                     <li><a href="">Rol</a></li>
                                 </ul>
                             </li>
                             <li class="">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                    aria-haspopup="true" aria-expanded="false">Raúl Perez<span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Raúl Perez<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="">Salir</a></li>
                                 </ul>
@@ -52,37 +47,54 @@
                 </div>
             </div>
         </nav>
-
     </header>
+    <section class="jumbotron"></section>
     <main>
-        <h1>Vista de medio</h1>
+        <div class="container">
+            <div class="row">
+                <section>
+                    <article class="row">
+                        <div class="col-md-12">
+                            <h1 class="h4 m-t-2">Estadísticas de "Dengue en NOA"</h1>
+                            <hr>
+                            <div>
+     
 
-        <div class="checkbox">
-            <input type="checkbox" value="sms">
-            <label>SMS</label><br>
+                        <div class="row numbers">
+                            <div class="col-md-4">
+                                <div class="h2 text-success">392.493</div>
+                                <p class="lead">Visitas últimos 30 días</p>
+                                <p class="text-muted">+11,06% vs mes anterior</p>
+                            </div>
+                        </div>
+  
+  
 
-            <input type="checkbox" value='push"'>
-            <label> PUSH </label><br>
 
-            <input type="checkbox" id="correo" name="correo" value='correo"'>
-            <label> CORREO </label><br>
+                                <button type="button" class="btn btn-link" onclick="location.replace('/notificaciones/index.html')">Volver</button>
+
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </div>
         </div>
-
     </main>
+    <!-- jQuery library -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- Initialize Bootstrap functionality -->
     <script>
-        // Initialize tooltip component
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
+    // Initialize tooltip component
+    $(function() {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
 
-        // Initialize popover component
-        $(function () {
-            $('[data-toggle="popover"]').popover()
-        })
+    // Initialize popover component
+    $(function() {
+        $('[data-toggle="popover"]').popover()
+    })
     </script>
 </body>
 

@@ -30,7 +30,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="">Estadísticas</a>
+                                <a href="../estadisticas/index.html">Estadísticas</a>
                             </li>
                             <li class="">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
@@ -57,39 +57,100 @@
     <main>
         <div class="container">
             <div class="row">
-                <form>
-                    <fieldset>
-                        <legend>
-                            <h2>Vista de las notificaciones</h2>
-                        </legend>
-
-                        <label for="nombre">Nombre de la notificación</label>
-                        <input type="text" placeholder="Notificación 1">
-
-                        <label>Campaña</label>
-                        <input type="text" placeholder="Campaña A">
-
-                        <label>Cuerpo del mensaje</label>
-                        <textarea
-                            placeholder="Es muy importante descartar todos los objetos que puedan servir de criadero del mosquito. Recordá acercarte a un centro de salud en caso de que presentes síntomas. Para más información ingresa a argentina.gob.ar/dengue"></textarea>
-                        <figcaption>Extensión máxima: 65 carácteres</figcaption>
-
-                        <label>Imagen</label>
-                        <input type="file">
-                        <figcaption>Extensión máxima de tamaño: 1mb. Formatos aceptados: JPEG, PNG, BMP</figcaption>
-                        <div class="form-group item-form">
-                            <input type="radio" value="Notificacion destacada">
-                            <label class="radio-inline">imagen ícono</label><br>
-
-                            <input type="radio" value='Seccion "novedades"'>
-                            <label class="radio-inline"> imagen hero </label><br>
-
+                <div class="col-md-12">
+                    <h1 class="h4">Vista de las notificaciones</h1>
+                    <hr>
+                    <form>
+                        <div>
+                            <fieldset>
+                                <div class="form-item webform-component webform-component-textfield webform-component--textfield form-group form-item form-item-submitted-textfield form-type-textfield form-group">
+                                    <label  class="control-label">Nombre de la notificación</label>
+                                    <input class="form-control form-text required" type="text" placeholder="Notificación 1">
+                                </div>
+                                <div class="form-item webform-component webform-component-textfield webform-component--textfield form-group form-item form-item-submitted-textfield form-type-textfield form-group">
+                                    <label class="control-label">Campaña</label>
+                                    <input class="form-control form-text required" type="text" placeholder="Campaña A">
+                                </div>
+                                <div class="class=form-item webform-component webform-component-textarea webform-component--textarea form-group form-item form-item-submitted-textarea form-type-textarea form-group">
+                                    <label class="control-label">Cuerpo del mensaje</label>
+                                    <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea">
+                                        <textarea class="form-control form-textarea required" cols="60" rows="5" placeholder="Ingresar el cuerpo del mensaje"></textarea>
+                                    </div>
+                                        <p class="help-block error">Extensión máxima: 65 carácteres</p>
+                                </div>
+                                <div class="form-item webform-component webform-component-file webform-component--archivo form-group form-item form-item-submitted-archivo form-type-managed-file form-group">
+                                    <label class="control-label">Imagen</label>
+                                    <div class="form-managed-file input-group">
+                                        <input class="form-control form-file" type="file">
+                                    </div>
+                                        <p class="help-block error">Extensión máxima de tamaño: 1mb. Formatos aceptados: JPEG, PNG, BMP</p>
+                                </div>
+                            
+                                <div class="form-group item-form">
+                                    <fieldset>
+                                        <legend>
+                                            <label>Icono-imagen-push</label>
+                                        </legend>
+                                        <div class="form-group item-form">
+                                            <label class="radio-inline">
+                                                <input type="radio">                                                
+                                                imagen ícono
+                                            </label>
+                                            <label class="radio-inline"> 
+                                            <input type="radio">
+                                                imagen hero 
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="form-item webform-component webform-component-textfield webform-component--textfield form-group form-item form-item-submitted-textfield form-type-textfield form-group">
+                                    <label class="control-label">Link</label>
+                                    <input class="form-control form-text required">
+                                </div>
+                                <fieldset>
+                                    <div class="form-group item-form">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Notificación destacada
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Sección novedades
+                                            </label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <table class="table table-responsive-poncho table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <p class="text-muted">Configuración de notificación</p>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Medio</td>
+                                            <td><button class="btn btn-primary btn-sm" onclick="location.replace('./medio.html')">Ver</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fecha</td>
+                                            <td><button class="btn btn-primary btn-sm">Ver</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Destinatarios</td>
+                                            <td><button class="btn btn-primary btn-sm">Ver</button></td>
+                                        </tr>
+                                    </tbody>
+                            </table>
+                            
+                        </fieldset>
+                        <button type="button" class="btn btn-link" onclick="location.replace('/notificaciones/index.html')">Volver</button>
                         </div>
+                    </form>
+                </div>
 
-                        <label>Link</label>
-                        <input>
-                    </fieldset>
-                </form>
             </div>
         </div>
     </main>

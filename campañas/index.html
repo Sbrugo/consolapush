@@ -27,7 +27,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="">Estadísticas</a>
+                                <a href="../estadisticas/index.html">Estadísticas</a>
                             </li>
                             <li class="">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Configuración<span class="caret"></span></a>
@@ -52,15 +52,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <button type="button" class="btn btn-success btn-sm" onclick="location.replace('./nueva.html')">+ Nueva campaña</button>
-                    <h1>Campañas</h1>
+                    <h1 class="h4">Campañas</h1>
+                    <hr>
+                    <button type="button" class="btn btn-success btn-sm pull-right" onclick="location.replace('./nueva.html')">+ Nueva campaña</button>
                     <section>
-                        <h2>Notificaciones en proceso</h2>
                         <table class="table table-responsive-poncho table-striped">
                             <thead>
                                 <tr>
-                                    <th>Nombre</th>
-                                    <th>Accion</th>
+                                    <th> <p class="text-muted">Nombre</p></th>
+                                    <th><p class="text-muted">Acción</p></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -80,9 +80,17 @@
                                     <td>Notificación D</td>
                                     <td><button class="btn btn-primary btn-sm">Editar</button></td>
                                 </tr>
+                                <tr>
+                                    <td>Notificación E</td>
+                                    <td><button class="btn btn-primary btn-sm">Editar</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Notificación F</td>
+                                    <td><button class="btn btn-primary btn-sm">Editar</button></td>
+                                </tr>
                             </tbody>
                         </table>
-                        <button type="button" class="btn btn-default btn-tag" onclick="location.replace('../notificaciones/index.html')">Cancelar</button>
+                        <button type="button" class="btn btn-default btn-tag" onclick="location.replace('../notificaciones/index.html')">Volver</button>
                     </section>
                 </div>
             </div>

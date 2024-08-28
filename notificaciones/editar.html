@@ -28,7 +28,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="">Estadísticas</a>
+                                <a href="../estadisticas/index.html">Estadísticas</a>
                             </li>
                             <li class="">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Configuración<span class="caret"></span></a>
@@ -54,6 +54,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="h4">Edición de notificaciones</h1>
+                    <hr>
                     <button type="submit" class="btn btn-default btn-tag pull-right">Cargar plantilla</button>
                     <form>
                         <div>
@@ -68,28 +69,35 @@
                                 </div>
                                 <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea">
                                     <label>Cuerpo del mensaje</label>
-                                    <textarea class="form-control form-textarea required" cols="60" rows="5" placeholder="Es muy importante descartar todos los objetos que puedan servir de criadero del mosquito. Recordá acercarte a un centro de salud en caso de que presentes síntomas. Para más información ingresa a argentina.gob.ar/dengue"></textarea>
-                                    <figure>
-                                        <figcaption>Extensión máxima: 65 carácteres</figcaption>
-                                    </figure>
+                                    <textarea class="form-control form-textarea required" cols="60" rows="3" placeholder="Es muy importante descartar todos los objetos que puedan servir de criadero del mosquito. Recordá acercarte a un centro de salud en caso de que presentes síntomas. Para más información ingresa a argentina.gob.ar/dengue"></textarea>
+                                        <p class="help-block error">Extensión máxima: 65 carácteres</p>
                                 </div>
-                                <div class="form-item webform-component webform-component-textfield webform-component--textfield form-group form-item form-item-submitted-textfield form-type-textfield form-group">
+                                <div class="form-managed-file input-group">
                                     <label class="control-label">Imagen</label>
-                                    <input class="form-control form-text required" type="file">
-                                    <figure>
-                                        <figcaption>Extensión máxima de tamaño: 1mb. Formatos aceptados: JPEG, PNG, BMP</figcaption>
-                                    </figure>
+                                    <input class="form-control form-file required" type="file">
+                                    <p class="help-block error">Extensión máxima de tamaño: 1mb. Formatos aceptados: JPEG, PNG, BMP</p>
                                 </div>
                                 <div class="form-group item-form">
-                                    <input type="radio" value="Notificacion destacada">
-                                    <label class="radio-inline">imagen ícono</label><br>
-        
-                                    <input type="radio" value='Seccion "novedades"'>
-                                    <label class="radio-inline"> imagen hero </label><br>
-        
+                                    <fieldset>
+                                        <legend>
+                                            <label>Icono-imagen-push</label>
+                                        </legend>
+                                        <div class="form-group item-form">
+                                            <label class="radio-inline">
+                                                <input type="radio">                                                
+                                                imagen ícono
+                                            </label>
+                                            <label class="radio-inline"> 
+                                            <input type="radio">
+                                                imagen hero 
+                                            </label>
+                                        </div>
+                                    </fieldset>       
                                 </div>
-                                <label>Link</label>
-                                <input>
+                                <div class="form-item webform-component webform-component-textfield webform-component--textfield form-group form-item form-item-submitted-textfield form-type-textfield form-group">
+                                    <label class="control-label">Link</label>
+                                    <input class="form-control form-text required">
+                                </div>
                                 <fieldset>
                                     <div class="form-group item-form">
                                         <div class="checkbox">
@@ -107,29 +115,29 @@
                                 <table class="table table-responsive-poncho table-striped">
                                         <thead>
                                             <tr>
-                                                <th>Edición de notificación</th>
-                                                <th>Accion</th>
+                                                <th><p class="text-muted">Edición de notificación</p></th>
+                                                <th><p class="text-muted">Acción</p></th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td>Medio</td>
-                                                <td><button onclick="location.replace('/medio.html')">Editar</button></td>
+                                                <td><button class="btn btn-primary btn-sm" onclick="window.location.href='./editarmedio.html'">Editar</button></td>
                                             </tr>
                                             <tr>
                                                 <td>Fecha</td>
-                                                <td><button>Editar</button></td>
+                                                <td><button class="btn btn-primary btn-sm">Editar</button></td>
                                             </tr>
                                             <tr>
                                                 <td>Destinatarios</td>
-                                                <td><button>Editar</button></td>
+                                                <td><button class="btn btn-primary btn-sm">Editar</button></td>
                                             </tr>
                                         </tbody>
                                 </table>
                             </fieldset>
                         </div>
-                        <button type="button" class="btn btn-success btn-sm">Guardar</button>
-                        <button type="button" onclick="location.replace('./index.html')" class="btn btn-danger btn-sm">Cancelar</button>
+                        <button type="button" class="btn btn-success">Guardar</button>
+                        <button type="button" onclick="location.replace('./index.html')" class="btn btn-danger">Cancelar</button>
                     </form>
                 </div>
             </div>
