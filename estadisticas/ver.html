@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,11 @@
     <link rel="stylesheet" href="../poncho.min.css">
     <title>Document</title>
 </head>
+
 <body>
     <!--El header debería ser inyectado ya que es un componente reutilizable pero 
     en esta instancia se agrega la etiqueta directamente en el archivo-->
     <header>
-        
         <nav class="navbar navbar-default">
             <div class="container-fluid container">
                 <div class="row">
@@ -26,7 +27,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="../estadisticas/index.html">Estadísticas</a>
+                                <a href="">Estadísticas</a>
                             </li>
                             <li class="">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Configuración<span class="caret"></span></a>
@@ -46,42 +47,55 @@
                 </div>
             </div>
         </nav>
-
     </header>
+    <section class="jumbotron"></section>
     <main>
         <div class="container">
             <div class="row">
-                <h1 class="h4">Edición de la campaña</h1>
-                <hr>
-                <form>
-                    <fieldset>
-        
-                        <div class="form-item webform-component webform-component-textfield webform-component--textfield form-group form-item form-item-submitted-textfield form-type-textfield form-group">
-                            <label class="control-label">Nombre de la campaña</label>
-                            <input class="form-control form-text required" type="text" placeholder="Ingresar el nombre de la notificación">
+                <section>
+                    <article class="row">
+                        <div class="col-md-12">
+                            <h1 class="h4 m-t-2">Estadísticas de "Dengue en NOA"</h1>
+                            <hr>
+                            <div>
+     
+
+                        <div class="row numbers">
+                            <div class="col-md-4">
+                                <div class="h2 text-success">392.493</div>
+                                <p class="lead">Visitas últimos 30 días</p>
+                                <p class="text-muted">+11,06% vs mes anterior</p>
+                            </div>
                         </div>
-                        <button type="button" class="btn btn-success">Guardar</button>
-                            <button type="button" onclick="location.replace('./index.html')" class="btn btn-danger">Cancelar</button>
-                    </fieldset>
-                </form>
+  
+  
+
+
+                                <button type="button" class="btn btn-link" onclick="location.replace('/notificaciones/index.html')">Volver</button>
+
+                            </div>
+                        </div>
+                    </article>
+                </section>
             </div>
-           </div>
+        </div>
     </main>
+    <!-- jQuery library -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Initialize Bootstrap functionality -->
+    <script>
+    // Initialize tooltip component
+    $(function() {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- Bootstrap JS -->
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<!-- Initialize Bootstrap functionality -->
-<script>
-// Initialize tooltip component
-$(function() {
-    $('[data-toggle="tooltip"]').tooltip()
-})
-
-// Initialize popover component
-$(function() {
-    $('[data-toggle="popover"]').popover()
-})
-</script>
+    // Initialize popover component
+    $(function() {
+        $('[data-toggle="popover"]').popover()
+    })
+    </script>
 </body>
+
 </html>

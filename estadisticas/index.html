@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../poncho.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--El header debería ser inyectado ya que es un componente reutilizable pero 
+    en esta instancia se agrega la etiqueta directamente en el archivo-->
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid container">
+                <div class="row">
+                    <div id="alignment-example" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav main-menu">
+                            <li class="">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="Notificaciones">Notificaciones<span class="caret"></span></a>
+                                <ul class="dropdown-menu" aria-labelledby="Notificaciones">
+                                    <li><a href="../notificaciones/index.html">Panel de notificaciones</a></li>
+                                    <li><a href="../campañas/index.html">Campañas</a></li>
+                                    <li><a href="../plantillas/index.html">Plantillas</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Estadísticas</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Configuración<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="">Usuarios</a></li>
+                                    <li><a href="">Rol</a></li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Raúl Perez<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="">Salir</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="jumbotron"></section>
+    <main>
+        <div class="container">
+            <div class="row">
+                <section>
+                    <article class="row">
+                        <div class="col-md-12">
+                            <h1 class="h4 m-t-2">Campañas realizadas</h1>
+                            <hr>
+                            <div>
+                                <section>
+                                    <h2 class="h4">Todas las notificaciones</h2>
+                                    <table class="table table-responsive-poncho table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th><p class="text-muted">Campaña</p></th>
+                                            <th><p class="text-muted">Nombre</p></th>
+                                            <th><p class="text-muted">Fecha</p></th>
+                                            <th><p class="text-muted">Efectividad</p></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Dengue</td>
+                                            <td>Dengue en NOA</td>
+                                            <td>2024/04/09</td>
+                                            <td>93,3</td>
+                                            <td><button  class="btn btn-primary btn-sm" onclick="location.replace('./ver.html')">Ver estadísticas</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Subsidios</td>
+                                            <td>Otorgamiento mayores</td>
+                                            <td>2024/04/11</td>
+                                            <td>98,1</td>
+                                            <td><button class="btn btn-primary btn-sm">Ver estadísticas</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Voucher</td>
+                                            <td>Voucher educativos</td>
+                                            <td>AAAA/MM/DD</td>
+                                            <td>88,3</td>
+                                            <td><button class="btn btn-primary btn-sm">Ver estadísticas</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vacaciones</td>
+                                            <td>Campaña B</td>
+                                            <td>AAAA/MM/DD</td>
+                                            <td>99</td>
+                                            <td><button class="btn btn-primary btn-sm">Ver estadísticas</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dengue</td>
+                                            <td>Dengue en NOA</td>
+                                            <td>2024/04/09</td>
+                                            <td>93,3</td>
+                                            <td><button  class="btn btn-primary btn-sm" onclick="location.replace('./ver.html')">Ver estadísticas</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Subsidios</td>
+                                            <td>Otorgamiento mayores</td>
+                                            <td>2024/04/11</td>
+                                            <td>98,1</td>
+                                            <td><button class="btn btn-primary btn-sm">Ver estadísticas</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Voucher</td>
+                                            <td>Voucher educativos</td>
+                                            <td>AAAA/MM/DD</td>
+                                            <td>88,3</td>
+                                            <td><button class="btn btn-primary btn-sm">Ver estadísticas</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vacaciones</td>
+                                            <td>Campaña B</td>
+                                            <td>AAAA/MM/DD</td>
+                                            <td>99</td>
+                                            <td><button class="btn btn-primary btn-sm">Ver estadísticas</button></td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </section>
+
+                                <div class="text-center">
+                                    <ul class="pagination">
+                                        <li class="active">
+                                            <span>1</span>
+                                        </li>
+                                        <li>
+                                            <a href="#">2</a>
+                                        </li>
+                                        <li><a>3</a></li>
+                                        <li><a>4</a></li>
+                                        <li><a>5</a></li>
+                                        <li><a>6</a></li>
+                                        <li><a>7</a></li>
+                                        <li><a>8</a></li>
+                                        <li><a>9</a></li>
+                                        <li class="pager-ellipsis disabled">
+                                            <span>..</span>
+                                        </li>
+                                        <li class="next">
+                                            <a>></a>
+                                        </li>
+                                        <li class="pager-last">
+                                            <a>>></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="btn btn-link" onclick="location.replace('/notificaciones/index.html')">Volver</button>
+
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </main>
+    <!-- jQuery library -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Initialize Bootstrap functionality -->
+    <script>
+    // Initialize tooltip component
+    $(function() {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+
+    // Initialize popover component
+    $(function() {
+        $('[data-toggle="popover"]').popover()
+    })
+    </script>
+</body>
+
+</html>

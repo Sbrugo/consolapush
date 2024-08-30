@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
       rel="stylesheet"
@@ -28,6 +27,7 @@
                     role="button"
                     aria-haspopup="true"
                     aria-expanded="false"
+                    id="Notificaciones"
                     >Notificaciones<span class="caret"></span
                   ></a>
                   <ul class="dropdown-menu" aria-labelledby="Notificaciones">
@@ -37,10 +37,11 @@
                       >
                     </li>
                     <li><a href="../campañas/index.html">Campañas</a></li>
+                    <li><a href="../plantillas/index.html">Plantillas</a></li>
                   </ul>
                 </li>
                 <li>
-                  <a href="">Estadísticas</a>
+                  <a href="../estadisticas/index.html">Estadísticas</a>
                 </li>
                 <li class="">
                   <a
@@ -81,46 +82,73 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1>Campañas</h1>
-            <section id="notificacion_en_proceso">
-              <table class="table table-responsive-poncho">
+            <h1 class="h4">Campañas</h1>
+            <hr />
+            <button
+              type="button"
+              class="btn btn-success btn-sm pull-right"
+              onclick="location.replace('./nueva.html')"
+            >
+              + Nueva campaña
+            </button>
+            <section>
+              <table class="table table-responsive-poncho table-striped">
                 <thead>
-                  <th>Nombre</th>
+                  <tr>
+                    <th><p class="text-muted">Nombre</p></th>
+                    <th><p class="text-muted">Acción</p></th>
+                  </tr>
                 </thead>
-                <tr>
-                  <td>Campaña A</td>
-                  <td>
-                    <button onclick="location.replace('./editar.html')">
-                      Editar
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Notificación B</td>
-                  <td><button>Editar</button></td>
-                </tr>
-                <tr>
-                  <td>Notificación C</td>
-                  <td><button>Editar</button></td>
-                </tr>
-                <tr>
-                  <td>Notificación D</td>
-                  <td><button>Editar</button></td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <td>Campaña A</td>
+                    <td>
+                      <button
+                        class="btn btn-primary btn-sm"
+                        onclick="location.replace('./editar.html')"
+                      >
+                        Editar
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Notificación B</td>
+                    <td>
+                      <button class="btn btn-primary btn-sm">Editar</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Notificación C</td>
+                    <td>
+                      <button class="btn btn-primary btn-sm">Editar</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Notificación D</td>
+                    <td>
+                      <button class="btn btn-primary btn-sm">Editar</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Notificación E</td>
+                    <td>
+                      <button class="btn btn-primary btn-sm">Editar</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Notificación F</td>
+                    <td>
+                      <button class="btn btn-primary btn-sm">Editar</button>
+                    </td>
+                  </tr>
+                </tbody>
               </table>
               <button
                 type="button"
-                class="btn btn-success"
-                onclick="location.replace('./nueva.html')"
-              >
-                + Nueva campaña
-              </button>
-              <button
-                type="button"
-                class="btn bg-danger text-white"
+                class="btn btn-default btn-tag"
                 onclick="location.replace('../notificaciones/index.html')"
               >
-                Cancelar
+                Volver
               </button>
             </section>
           </div>
