@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,11 @@
     <link rel="stylesheet" href="../poncho.min.css">
     <title>Document</title>
 </head>
+
 <body>
     <!--El header debería ser inyectado ya que es un componente reutilizable pero 
     en esta instancia se agrega la etiqueta directamente en el archivo-->
     <header>
-        
         <nav class="navbar navbar-default">
             <div class="container-fluid container">
                 <div class="row">
@@ -46,27 +47,46 @@
                 </div>
             </div>
         </nav>
-
     </header>
     <main>
-       <div class="container">
-        <div class="row">
-            <h1 class="h4">Nueva campaña</h1>
-            <hr>
-            <form>
-                <fieldset>
-    
-                    <div class="form-item webform-component webform-component-textfield webform-component--textfield form-group form-item form-item-submitted-textfield form-type-textfield form-group">
-                        <label class="control-label">Nombre de la campaña</label>
-                        <input class="form-control form-text required" type="text" placeholder="Ingresar el nombre de la notificación">
-                    </div>
-                    <button type="button" class="btn btn-success">Crear</button>
-                        <button type="button" onclick="location.replace('./index.html')" class="btn btn-danger">Cancelar</button>
-                </fieldset>
-            </form>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="h4">Configuración de usuarios</h1>
+                    <hr>
+                    <section>
+                        <table class="table table-responsive-poncho table-striped">
+                            <thead>
+                                <tr>
+                                    <th> <p class="text-muted">Usuario</p></th>
+                                    <th><p class="text-muted">Acción</p></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Usuario 1</strong></td>
+                                    <td><button class="btn btn-primary btn-sm">Editar</button></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Usuario 2</strong></td>
+                                    <td><button class="btn btn-primary btn-sm">Editar</button></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Usuario 3</strong></td>
+                                    <td><button class="btn btn-primary btn-sm">Editar</button></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Usuario 4</strong></td>
+                                    <td><button class="btn btn-primary btn-sm">Editar</button></td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                        <button type="button" class="btn btn-default btn-tag" onclick="location.replace('../notificaciones/index.html')">Volver</button>
+                    </section>
+                </div>
+            </div>
         </div>
-       </div>
-        
     </main>
     <!-- jQuery library -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -76,13 +96,14 @@
     <script>
     // Initialize tooltip component
     $(function() {
-    $('[data-toggle="tooltip"]').tooltip()
-})
-
-// Initialize popover component
-$(function() {
-    $('[data-toggle="popover"]').popover()
-})
-</script>
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+    
+    // Initialize popover component
+    $(function() {
+        $('[data-toggle="popover"]').popover()
+    })
+    </script>
 </body>
+
 </html>
