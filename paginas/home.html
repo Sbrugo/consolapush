@@ -22,7 +22,7 @@
         <div class="container">
             <div class="row">
                 <div id="alignment-example" class="collapse navbar-collapse">
-                    <ul class="nav nav-pills text-arg-azul">
+                    <ul class="nav nav-tabs text-arg-azul">
                         <li><a href="../notificaciones/index.html"><i class="icono-arg-casa-negativo"></i><strong>Home</strong></a></li>
                         <li><a href="../notificaciones/index.html"><i class="icono-arg-alarma-negativo"></i><strong>Panel de notificaciones</strong></a></li>
                         <li><a href="../campañas/index.html"><i class="fa fa-signal"></i><strong>Estadísticas</strong></a></li>
@@ -38,13 +38,15 @@
             <div class="row">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="h4 m-t-4 m-b-2 p-x-1">Home</h1>
-                        <hr>
+                        <h1 class="h4 m-t-3 p-x-1 m-b-0">Home</h1>
+                        <div class="col-md-12">
+                            <hr>
+                        </div>
                     </div>
                 </div>
                 <div class="row m-t-2 m-b-4">
                     <div class="col-md-12">
-                        <h2 class="h4 p-x-1">Enviar notificaciones</h2>
+                        <h2 class="h4 p-x-1 m-b-2">Enviar notificaciones</h2>
                         <div class="col-md-4">
                             <a class="panel panel-default">
                                 <div class="panel-body bg-gray p-y-2">
@@ -53,7 +55,7 @@
                                             <h3 class="text-center">Push</h3>
                                         </div>
                                         <div class="text-center hidden-xs panel-frame-fix-icono">
-                                            <i class="fa fa-plus-circle fa-lg"></i>
+                                            <i class="fa fa-plus-circle fa-2x text-arg-azul"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -67,7 +69,7 @@
                                             <h3 class="text-center">Splash</h3>
                                         </div>
                                         <div class="text-center hidden-xs panel-frame-fix-icono">
-                                            <i class="fa fa-plus-circle fa-lg"></i>
+                                            <i class="fa fa-plus-circle fa-2x text-arg-azul"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -81,7 +83,7 @@
                                             <h3 class="text-center">Novedad</h3>
                                         </div>
                                         <div class="text-center hidden-xs panel-frame-fix-icono">
-                                            <i class="fa fa-plus-circle fa-lg"></i>
+                                            <i class="fa fa-plus-circle fa-2x text-arg-azul"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -91,7 +93,7 @@
                 </div>
                 <div class="col-md-12">
                     <div class="row">
-                        <h2 class="h4 m-t-4 p-x-1">Notificaciones en proceso</h2>
+                        <h2 class="h4 m-t-4 p-x-1 m-b-2">Notificaciones en proceso</h2>
                     </div>
                     <div class="col-md-12">
                         <div class="row">
@@ -109,13 +111,13 @@
                                     <td><strong>Prevení el Dengue</strong></td>
                                     <td><strong>Dengue</strong></td>
                                     <td><strong>AAAA/MM/DD</strong></td>
-                                    <td><button  class="btn btn-primary btn-sm" onclick="location.replace('./editar.html')">Editar</button></td>
+                                    <td><button  class="btn btn-primary btn-sm">Editar</button></td>
                                 </tr>
                                 <tr>
                                     <td><strong>Notificación 6</strong></td>
                                     <td><strong>-</strong></td>
                                     <td><strong>AAAA/MM/DD</strong></td>
-                                    <td><button class="btn btn-primary btn-sm">Editar</button></td>
+                                    <td><button class="btn btn-primary btn-sm"  onclick="location.replace('../notificaciones/editar.html')">Editar</button></td>
                                 </tr>
                                 <tr>
                                     <td><strong>Notificación 7</strong></td>
@@ -135,7 +137,7 @@
                     </div>
                 </div>
             </div>
-                <div class="text-center">
+            <div class="text-center">
                     <ul class="pagination">
                         <li class="active">
                             <span>1</span>
@@ -160,9 +162,8 @@
                             <a>>></a>
                         </li>
                     </ul>
-                </div>
-                <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.18/r-2.2.2/datatables.min.css"/>
-                <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.18/r-2.2.2/datatables.min.js"></script>
+            </div>
+        </div>
     </body>
     
 </body>
