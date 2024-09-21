@@ -18,10 +18,7 @@
       <nav class="navbar navbar-default">
         <div class="container-fluid container">
           <div class="row">
-            <div
-              id="alignment-example"
-              class="collapse navbar-collapse bg-gray"
-            >
+            <div id="alignment-example" class="collapse navbar-collapse">
               <ul class="nav navbar-nav main-menu">
                 <li class="">
                   <a
@@ -45,7 +42,7 @@
                   </ul>
                 </li>
                 <li>
-                  <a href="../estadisticas/index.html">Estadísticas</a>
+                  <a href="">Estadísticas</a>
                 </li>
                 <li class="">
                   <a
@@ -62,9 +59,7 @@
                     <li><a href="../usuarios/rol.html">Rol</a></li>
                   </ul>
                 </li>
-              </ul>
-              <ul class="nav navbar-nav main-menu pull-right">
-                <li>
+                <li class="">
                   <a
                     href="#"
                     class="dropdown-toggle"
@@ -90,117 +85,69 @@
           <section>
             <article class="row">
               <div class="col-md-12">
-                <h1 class="h3 m-t-2">Panel de notificaciones</h1>
+                <h1 class="h4 m-t-2">Configuración de rol</h1>
                 <hr />
                 <button
-                  onclick="location.replace('./nueva.html')"
+                  onclick="location.replace('./nuevorol.html')"
                   class="btn btn-success btn-sm pull-right"
                 >
-                  + Nueva notificación
+                  + Nuevo rol
                 </button>
                 <div>
                   <section>
-                    <h2 class="h4">Notificaciones en proceso</h2>
                     <table class="table table-responsive-poncho table-striped">
                       <thead>
                         <tr>
-                          <th><p class="text-muted">Nombre</p></th>
-                          <th><p class="text-muted">Campaña</p></th>
-                          <th><p class="text-muted">Fecha</p></th>
-                          <th><p class="text-muted">Accion</p></th>
+                          <th><p class="text-muted">Rol</p></th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td><strong>Prevení el Dengue</strong></td>
-                          <td><strong>Dengue</strong></td>
-                          <td><strong>AAAA/MM/DD</strong></td>
+                          <td><strong>Administrador</strong></td>
+
                           <td>
                             <button
                               class="btn btn-primary btn-sm"
-                              onclick="location.replace('./editar.html')"
+                              onclick="location.replace('./editarrol.html')"
                             >
                               Editar
                             </button>
                           </td>
                         </tr>
                         <tr>
-                          <td><strong>Notificación 6</strong></td>
-                          <td><strong>-</strong></td>
-                          <td><strong>AAAA/MM/DD</strong></td>
-                          <td>
-                            <button class="btn btn-primary btn-sm">
-                              Editar
-                            </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><strong>Notificación 7</strong></td>
-                          <td><strong>Campaña C</strong></td>
-                          <td><strong>AAAA/MM/DD</strong></td>
-                          <td>
-                            <button class="btn btn-primary btn-sm">
-                              Editar
-                            </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><strong>Notificación 8</strong></td>
-                          <td><strong>Campaña B</strong></td>
-                          <td><strong>AAAA/MM/DD</strong></td>
-                          <td>
-                            <button class="btn btn-primary btn-sm">
-                              Editar
-                            </button>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </section>
-                  <section>
-                    <h2 class="h4">Notificaciones realizadas</h2>
-                    <table class="table table-responsive-poncho table-striped">
-                      <thead>
-                        <tr>
-                          <th><p class="text-muted">Nombre</p></th>
-                          <th><p class="text-muted">Campaña</p></th>
-                          <th><p class="text-muted">Fecha</p></th>
-                          <th><p class="text-muted">Accion</p></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td><strong>Notificación 1</strong></td>
-                          <td><strong>Campaña A</strong></td>
-                          <td><strong>AAAA/MM/DD</strong></td>
+                          <td><strong>Editor</strong></td>
+
                           <td>
                             <button
                               class="btn btn-primary btn-sm"
                               onclick="location.replace('./ver.html')"
                             >
-                              Ver
+                              Editar
                             </button>
                           </td>
                         </tr>
                         <tr>
-                          <td><strong>Notificación 2</strong></td>
-                          <td><strong>Campaña B</strong></td>
-                          <td><strong>AAAA/MM/DD</strong></td>
+                          <td><strong>Redactor</strong></td>
+
                           <td>
-                            <button class="btn btn-primary btn-sm">Ver</button>
+                            <button class="btn btn-primary btn-sm">
+                              Editar
+                            </button>
                           </td>
                         </tr>
                         <tr>
-                          <td><strong>Notificación 3</strong></td>
-                          <td><strong>Campaña C</strong></td>
-                          <td><strong>AAAA/MM/DD</strong></td>
+                          <td><strong>Supervisor</strong></td>
+
                           <td>
-                            <button class="btn btn-primary btn-sm">Ver</button>
+                            <button class="btn btn-primary btn-sm">
+                              Editar
+                            </button>
                           </td>
                         </tr>
                       </tbody>
                     </table>
                   </section>
+
                   <div class="text-center">
                     <ul class="pagination">
                       <li class="active">
@@ -227,6 +174,13 @@
                       </li>
                     </ul>
                   </div>
+                  <button
+                    type="button"
+                    class="btn btn-link"
+                    onclick="location.replace('/notificaciones/index.html')"
+                  >
+                    Volver
+                  </button>
                 </div>
               </div>
             </article>
