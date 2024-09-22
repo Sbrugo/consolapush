@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../poncho.min.css" />
+    <link
+      href="/poncho/node_modules/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/gh/argob/poncho@release-1.x/dist/css/icono-arg.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <section class="jumbotron bg-primary">
+      <div class="jumbotron_body">
+        <div class="container">
+          <div class="row"></div>
+        </div>
+      </div>
+    </section>
+    <div class="bg-gray">
+      <div class="container">
+        <div class="row">
+          <div id="alignment-example" class="collapse navbar-collapse">
+            <ul class="nav nav-tabs text-arg-azul">
+              <li>
+                <a href="../index.html"
+                  ><i class="icono-arg-casa-negativo"></i
+                  ><strong>Home</strong></a
+                >
+              </li>
+              <li>
+                <a href="../notificaciones/index.html"
+                  ><i class="icono-arg-alarma-negativo"></i
+                  ><strong>Panel de notificaciones</strong></a
+                >
+              </li>
+              <li>
+                <a href="../campañas/index.html"
+                  ><i class="fa fa-signal"></i><strong>Estadísticas</strong></a
+                >
+              </li>
+              <li>
+                <a href="../plantillas/index.html"
+                  ><i class="fa fa-cog"></i><strong>Configuración</strong></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="row">
+          <div class="col-md-12 m-t-2">
+            <h1 class="h4 m-t-2 m-b-0">Campañas realizadas</h1>
+            <div class="col-md-12">
+              <hr />
+            </div>
+          </div>
+        </div>
+        <div class="row m-b-4">
+          <div class="row">
+            <h2 class="h4 m-t-4 p-x-1 m-b-2">Todas las notificaciones</h2>
+          </div>
+          <div class="col-md-12">
+            <div class="row">
+              <table class="table table-responsive-poncho table-striped">
+                <thead>
+                  <tr>
+                    <th><p class="text-muted">Campaña</p></th>
+                    <th><p class="text-muted">Nombre</p></th>
+                    <th><p class="text-muted">Fecha</p></th>
+                    <th><p class="text-muted">Efectividad</p></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Dengue</strong></td>
+                    <td><strong>Dengue en NOA</strong></td>
+                    <td><strong>2024/04/09</strong></td>
+                    <td><strong>93,3</strong></td>
+                    <td>
+                      <button
+                        class="btn btn-primary btn-sm"
+                        onclick="location.replace('./ver.html')"
+                      >
+                        Ver estadísticas
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Subsidios</strong></td>
+                    <td><strong>Otorgamiento mayores</strong></td>
+                    <td><strong>2024/04/11</strong></td>
+                    <td><strong>98,1</strong></td>
+                    <td>
+                      <button class="btn btn-primary btn-sm">
+                        Ver estadísticas
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Voucher</strong></td>
+                    <td><strong>Voucher educativos</strong></td>
+                    <td><strong>AAAA/MM/DD</strong></td>
+                    <td><strong>88,3</strong></td>
+                    <td>
+                      <button class="btn btn-primary btn-sm">
+                        Ver estadísticas
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Vacaciones</strong></td>
+                    <td><strong>Campaña B</strong></td>
+                    <td><strong>AAAA/MM/DD</strong></td>
+                    <td><strong>99</strong></td>
+                    <td>
+                      <button class="btn btn-primary btn-sm">
+                        Ver estadísticas
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Dengue</strong></td>
+                    <td><strong>Dengue en NOA</strong></td>
+                    <td><strong>2024/04/09</strong></td>
+                    <td><strong>93,3</strong></td>
+                    <td>
+                      <button
+                        class="btn btn-primary btn-sm"
+                        onclick="location.replace('./ver.html')"
+                      >
+                        Ver estadísticas
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Subsidios</strong></td>
+                    <td><strong>Otorgamiento mayores</strong></td>
+                    <td><strong>2024/04/11</strong></td>
+                    <td><strong>98,1</strong></td>
+                    <td>
+                      <button class="btn btn-primary btn-sm">
+                        Ver estadísticas
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Voucher</strong></td>
+                    <td><strong>Voucher educativos</strong></td>
+                    <td><strong>AAAA/MM/DD</strong></td>
+                    <td><strong>88,3</strong></td>
+                    <td>
+                      <button class="btn btn-primary btn-sm">
+                        Ver estadísticas
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Vacaciones</strong></td>
+                    <td><strong>Campaña B</strong></td>
+                    <td><strong>AAAA/MM/DD</strong></td>
+                    <td><strong>99</strong></td>
+                    <td>
+                      <button class="btn btn-primary btn-sm">
+                        Ver estadísticas
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <ul class="pagination">
+          <li class="active">
+            <span>1</span>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li><a>3</a></li>
+          <li><a>4</a></li>
+          <li><a>5</a></li>
+          <li><a>6</a></li>
+          <li><a>7</a></li>
+          <li><a>8</a></li>
+          <li><a>9</a></li>
+          <li class="pager-ellipsis disabled">
+            <span>..</span>
+          </li>
+          <li class="next">
+            <a>></a>
+          </li>
+          <li class="pager-last">
+            <a>>></a>
+          </li>
+        </ul>
+      </div>
+      <button
+        type="button"
+        class="btn btn-link"
+        onclick="location.replace('/notificaciones/index.html')"
+      >
+        Volver
+      </button>
+    </div>
+  </body>
+</html>
