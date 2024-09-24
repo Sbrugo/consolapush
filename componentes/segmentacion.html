@@ -1,205 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../poncho.min.css">
-    <link href="/poncho/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/gh/argob/poncho@release-1.x/dist/css/icono-arg.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../poncho.min.css" />
+    <link
+      href="/poncho/node_modules/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/gh/argob/poncho@release-1.x/dist/css/icono-arg.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
-</head>
-<body>
-    <!-- <section class="jumbotron bg-primary">
-        <div class="jumbotron_body">
-            <div class="container">
-                <div class="row"></div>
-            </div>
+  </head>
+  <body>
+    <section class="jumbotron bg-primary">
+      <div class="jumbotron_body">
+        <div class="container">
+          <div class="row"></div>
         </div>
+      </div>
     </section>
     <div class="bg-gray">
-        <div class="container">
-            <div class="row">
-                <div id="alignment-example" class="collapse navbar-collapse">
-                    <ul class="nav nav-tabs text-arg-azul">
-                        <li><a href="../paginas/home.html"><i class="icono-arg-casa-negativo"></i><strong>Home</strong></a></li>
-                        <li><a href="../notificaciones/index.html"><i class="icono-arg-alarma-negativo"></i><strong>Panel de notificaciones</strong></a></li>
-                        <li><a href="../campañas/index.html"><i class="fa fa-signal"></i><strong>Estadísticas</strong></a></li>
-                        <li><a href="../plantillas/index.html"><i class="fa fa-cog"></i><strong>Configuración</strong></a></li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div id="alignment-example" class="collapse navbar-collapse">
+            <ul class="nav nav-tabs text-arg-azul">
+              <li>
+                <a href="../notificaciones/index.html"
+                  ><i class="icono-arg-casa-negativo"></i
+                  ><strong>Home</strong></a
+                >
+              </li>
+              <li>
+                <a href="../notificaciones/index.html"
+                  ><i class="icono-arg-alarma-negativo"></i
+                  ><strong>Panel de notificaciones</strong></a
+                >
+              </li>
+              <li>
+                <a href="../campañas/index.html"
+                  ><i class="fa fa-signal"></i><strong>Estadísticas</strong></a
+                >
+              </li>
+              <li>
+                <a href="../plantillas/index.html"
+                  ><i class="fa fa-cog"></i><strong>Configuración</strong></a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-    </div> -->
-    
+      </div>
+    </div>
+
     <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 m-t-2">
-                    <h1 class="h4 p-x-1 m-b-0">Destinatarios</h1>
-                    <div class="col-md-12">
-                        <hr>
-                    </div>
-                    <button type="submit" class="btn btn-default btn-tag pull-right m-x-1">Cargar selección</button>
-                </div>
-                <div class="col-md-12  m-t-2">
-                    <div class="col-md-12">
-                        <hr>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 m-t-2">
+            <h1 class="h4 p-x-1 m-b-0">Destinatarios</h1>
+            <div class="col-md-12">
+              <hr />
             </div>
-            <div class="row p-x-1">
-                <div class="col-md-12 m-t-2">
-                    <div class="form-group item-form">
-                        <fieldset>
-                            <legend>
-                                <h1 class="h4 m-b-3"> Segmentación por edad y género</h1> 
-                            </legend>
-                            <div class="row  p-x-0">
-                                <div class="col-md-4">
-                                    <label>Menores (0 a 18)</label>
-                                    <div class="form-group item-form">
-                                        <ul class="d-flex flex-column list-unstyled ">
-                                            <li>
-                                                <label>
-                                                    <input type="radio">
-                                                    Todos
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="radio">
-                                                    Masculino
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="radio">
-                                                    Femenino
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="radio">
-                                                    No binario
-                                                </label>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <label>Mayores (18 a 60)</label>
-                                    <div class="form-group item-form">
-                                        <ul class="d-flex flex-column list-unstyled ">
-                                            <li>
-                                                <label>
-                                                    <input type="radio">
-                                                    Todos
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="radio">
-                                                    Masculino
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="radio">
-                                                    Femenino
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="radio">
-                                                    No binario
-                                                </label>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <label>Jubilados (+60)</label>
-                                    <div class="form-group item-form">
-                                        <ul class="d-flex flex-column list-unstyled ">
-                                            <li>
-                                                <label>
-                                                    <input type="radio">
-                                                    Todos
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="radio">
-                                                    Masculino
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="radio">
-                                                    Femenino
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="radio">
-                                                    No binario
-                                                </label>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </div>
-                </div>
+            <button
+              type="submit"
+              class="btn btn-default btn-tag pull-right m-x-1"
+            >
+              Cargar selección
+            </button>
+          </div>
+          <div class="col-md-12 m-t-2">
+            <div class="col-md-12">
+              <hr />
             </div>
-            <div class="row p-x-1">
-                <div class="col-md-12 m-t-2">
-                    <div class="form-group item-form">
-                        <fieldset>
-                            <legend>
-                                <h1 class="h4 m-b-3"> Segmentación por localización geográfica</h1> 
-                            </legend>
-                            <div class="row p-x-0">
-                                <div class="col-md-4">
-                                    <label>Provincia</label>
-                                    <div class="form-group item-form">
-                                        <select class="form-control">
-                                            <option selected="">Opción</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <label>Distrito</label>
-                                    <div class="form-group item-form">
-                                        <select class="form-control">
-                                            <option selected="">Opción</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <label>Localidad</label>
-                                    <div class="form-group item-form">
-                                        <select class="form-control">
-                                            <option selected="">Opción</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </div>
-                </div>
-            </div>
-            <div class="row p-x-1 m-y-4">
-                <div class="col-md-12">
-                    <button type="submit" class="btn btn-default btn-tag">Cargar selección</button>
-                    <button type="button" onclick="location.replace('../paginas/home.html')" class="btn btn-danger">Cancelar</button>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="row p-x-1">
+          <div class="col-md-12 m-t-2">
+            <div class="form-group item-form">
+              <fieldset>
+                <legend>
+                  <h1 class="h4 m-b-3">Segmentación por edad y género</h1>
+                </legend>
+                <div class="row p-x-0">
+                  <div class="col-md-4">
+                    <label>Menores (0 a 18)</label>
+                    <div class="form-group item-form">
+                      <ul class="d-flex flex-column list-unstyled">
+                        <li>
+                          <label>
+                            <input type="radio" />
+                            Todos
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" />
+                            Masculino
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" />
+                            Femenino
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" />
+                            No binario
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <label>Mayores (18 a 60)</label>
+                    <div class="form-group item-form">
+                      <ul class="d-flex flex-column list-unstyled">
+                        <li>
+                          <label>
+                            <input type="radio" />
+                            Todos
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" />
+                            Masculino
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" />
+                            Femenino
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" />
+                            No binario
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <label>Jubilados (+60)</label>
+                    <div class="form-group item-form">
+                      <ul class="d-flex flex-column list-unstyled">
+                        <li>
+                          <label>
+                            <input type="radio" />
+                            Todos
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" />
+                            Masculino
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" />
+                            Femenino
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" />
+                            No binario
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+        <div class="row p-x-1">
+          <div class="col-md-12 m-t-2">
+            <div class="form-group item-form">
+              <fieldset>
+                <legend>
+                  <h1 class="h4 m-b-3">
+                    Segmentación por localización geográfica
+                  </h1>
+                </legend>
+                <div class="row p-x-0">
+                  <div class="col-md-4">
+                    <label>Provincia</label>
+                    <div class="form-group item-form">
+                      <select class="form-control">
+                        <option selected="">Opción</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <label>Distrito</label>
+                    <div class="form-group item-form">
+                      <select class="form-control">
+                        <option selected="">Opción</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <label>Localidad</label>
+                    <div class="form-group item-form">
+                      <select class="form-control">
+                        <option selected="">Opción</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+        <div class="row p-x-1 m-y-4">
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-default btn-tag">
+              Cargar selección
+            </button>
+            <button
+              type="button"
+              onclick="location.replace('../index.html')"
+              class="btn btn-danger"
+            >
+              Cancelar
+            </button>
+          </div>
+        </div>
+      </div>
     </body>
-    
-</body>
+  </body>
 </html>
