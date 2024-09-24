@@ -27,173 +27,231 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="jumbotron bg-primary">
-      <div class="jumbotron_body">
-        <div class="container">
-          <div class="row"></div>
-        </div>
-      </div>
-    </section>
-    <div class="bg-gray">
-      <div class="container">
-        <div class="row">
-          <div id="alignment-example" class="collapse navbar-collapse">
-            <ul class="nav nav-tabs text-arg-azul">
-              <li>
-                <a href="#"
-                  ><i class="icono-arg-casa-negativo"></i
-                  ><strong>Home</strong></a
-                >
-              </li>
-              <li>
-                <a href="notificaciones.html"
-                  ><i class="icono-arg-alarma-negativo"></i
-                  ><strong>Panel de notificaciones</strong></a
-                >
-              </li>
-              <li>
-                <a href="metricas.html"
-                  ><i class="fa fa-signal"></i><strong>Métricas</strong></a
-                >
-              </li>
-              <li>
-                <a href="configuracion.html"
-                  ><i class="fa fa-cog"></i><strong>Configuración</strong></a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
+    <div class="col-md-2 bg-primary p-y-2 p-x-1">
       <div class="row">
-        <div class="row">
-          <div class="col-md-12 m-t-2">
-            <h1 class="h4 p-x-1 m-b-0">Home</h1>
-            <div class="col-md-12">
-              <hr />
-            </div>
+        <h1 class="h3 p-x-2"><i class="fa fa-inbox m-r-1"></i> Noti.mi</h1>
+        <hr />
+      </div>
+
+      <ul class="nav">
+        <li class="m-y-1">
+          <a href="/index.html"
+            ><i class="icono-arg-casa-negativo m-r-1"></i
+            ><strong>Dashboard</strong></a
+          >
+        </li>
+        <li class="m-y-1">
+          <a href="notificaciones.html"
+            ><i class="icono-arg-alarma-negativo m-r-1"></i
+            ><strong>Notificaciones</strong></a
+          >
+        </li>
+        <li class="m-y-1">
+          <a href="metricas.html"
+            ><i class="fa fa-signal m-r-1"></i><strong>Métricas</strong></a
+          >
+        </li>
+        <li class="m-y-1">
+          <a href="configuracion.html"
+            ><i class="fa fa-cog m-r-1"></i><strong>Configuración</strong></a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-10 p-y-2 p-x-4">
+      <div class="row">
+        <h1 class="h2 p-x-2">
+          <i class="fa fa-dashboard p-r-1"></i> Dashboard
+        </h1>
+      </div>
+      <div class="row">
+        <div class="col-md-12 p-x-3 p-y-3">
+          <h2 class="h4 p-x-1 m-b-2">Enviá una nueva notificación:</h2>
+          <!-- <div class="col-md-4">
+            <a class="panel panel-default" href="notificaciones/nuevapush.html">
+              <div class="panel-body bg-gray p-y-2">
+                <div class="media">
+                  <div class="media-body">
+                    <h3 class="text-center">Push</h3>
+                  </div>
+                  <div class="text-center hidden-xs panel-frame-fix-icono">
+                    <i class="fa fa-plus-circle fa-2x text-arg-azul"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a
+              class="panel panel-default"
+              href="notificaciones/nuevasplash.html"
+            >
+              <div class="panel-body bg-gray p-y-2">
+                <div class="media">
+                  <div class="media-body">
+                    <h3 class="text-center">Splash</h3>
+                  </div>
+                  <div class="text-center hidden-xs panel-frame-fix-icono">
+                    <i class="fa fa-plus-circle fa-2x text-arg-azul"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a
+              class="panel panel-default"
+              href="notificaciones/nuevanovedad.html"
+            >
+              <div class="panel-body bg-gray p-y-2">
+                <div class="media">
+                  <div class="media-body">
+                    <h3 class="text-center">Novedad</h3>
+                  </div>
+                  <div class="text-center hidden-xs panel-frame-fix-icono">
+                    <i class="fa fa-plus-circle fa-2x text-arg-azul"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div> -->
+          <div class="col-md-4">
+            <a class="panel panel-default" href="notificaciones/nuevapush.html">
+                            
+              <div class="text-center hidden-xs panel-frame-fix-icono">
+                <i class="fa fa-plus-circle fa-2x text-arg-azul"></i>
+              </div>
+                    
+              <div class="media-body">
+                        
+                <h3 class="text-center">Push</h3>
+
+                <div class="text-muted panel-frame-bajada text-center">
+                  <p class="text-muted">
+                    Mensaje estático que se visualiza en el Home o sección de la
+                    app.
+                  </p>
+                        
+                </div>
+                      
+              </div>
+                     
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a
+              class="panel panel-default"
+              href="notificaciones/nuevanovedad.html"
+            >
+                            
+              <div class="text-center hidden-xs panel-frame-fix-icono">
+                <i class="fa fa-plus-circle fa-2x text-arg-azul"></i>
+              </div>
+                    
+              <div class="media-body">
+                        
+                <h3 class="text-center">Novedad</h3>
+
+                <div class="text-muted panel-frame-bajada text-center">
+                  <p class="text-muted">
+                    Mensaje estático que se visualiza en el Home o sección de la
+                    app.
+                  </p>
+                        
+                </div>
+                      
+              </div>
+                     
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a
+              class="panel panel-default"
+              href="notificaciones/nuevasplash.html"
+            >
+                            
+              <div class="text-center hidden-xs panel-frame-fix-icono">
+                <i class="fa fa-plus-circle fa-2x text-arg-azul"></i>
+              </div>
+                    
+              <div class="media-body">
+                        
+                <h3 class="text-center">Splash</h3>
+
+                <div class="text-muted panel-frame-bajada text-center">
+                  <p class="text-muted">
+                    Mensaje estático que se visualiza en el Home o sección de la
+                    app.
+                  </p>
+                        
+                </div>
+                      
+              </div>
+                     
+            </a>
           </div>
         </div>
-        <div class="row m-b-4">
-          <div class="col-md-12">
-            <h2 class="h4 p-x-1 m-b-2">Enviar notificaciones</h2>
-            <div class="col-md-4">
-              <a
-                class="panel panel-default"
-                href="notificaciones/nuevapush.html"
-              >
-                <div class="panel-body bg-gray p-y-2">
-                  <div class="media">
-                    <div class="media-body">
-                      <h3 class="text-center">Push</h3>
-                    </div>
-                    <div class="text-center hidden-xs panel-frame-fix-icono">
-                      <i class="fa fa-plus-circle fa-2x text-arg-azul"></i>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a
-                class="panel panel-default"
-                href="notificaciones/nuevasplash.html"
-              >
-                <div class="panel-body bg-gray p-y-2">
-                  <div class="media">
-                    <div class="media-body">
-                      <h3 class="text-center">Splash</h3>
-                    </div>
-                    <div class="text-center hidden-xs panel-frame-fix-icono">
-                      <i class="fa fa-plus-circle fa-2x text-arg-azul"></i>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a
-                class="panel panel-default"
-                href="notificaciones/nuevanovedad.html"
-              >
-                <div class="panel-body bg-gray p-y-2">
-                  <div class="media">
-                    <div class="media-body">
-                      <h3 class="text-center">Novedad</h3>
-                    </div>
-                    <div class="text-center hidden-xs panel-frame-fix-icono">
-                      <i class="fa fa-plus-circle fa-2x text-arg-azul"></i>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
+      </div>
+      <div class="col-md-12 p-x-3">
+        <div class="row">
+          <h2 class="h4 m-t-4 p-x-1 m-b-2">Notificaciones en proceso</h2>
         </div>
         <div class="col-md-12">
           <div class="row">
-            <h2 class="h4 m-t-4 p-x-1 m-b-2">Notificaciones en proceso</h2>
-          </div>
-          <div class="col-md-12">
-            <div class="row">
-              <table class="table dataTables table-bordered table-striped">
-                <thead>
-                  <tr>
-                    <th><i class="fa fa-sort-amount-desc"></i> Nombre</th>
-                    <th><i class="fa fa-sort-amount-desc"></i> Tipo</th>
-                    <th><i class="fa fa-sort-amount-desc"></i> Campaña</th>
-                    <th><i class="fa fa-sort-amount-desc"></i> Fecha</th>
-                    <th>Accion</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Prevení el Dengue</td>
-                    <td>PUSH</td>
-                    <td>Dengue</td>
-                    <td>AAAA/MM/DD</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm">Editar</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Notificación 6</td>
-                    <td>SPLASH</td>
-                    <td>-</td>
-                    <td>AAAA/MM/DD</td>
-                    <td>
-                      <button
-                        class="btn btn-primary btn-sm"
-                        onclick="location.replace('notificaciones/editar.html')"
-                      >
-                        Editar
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Notificación 7</td>
-                    <td>NOVEDAD</td>
-                    <td>Campaña C</td>
-                    <td>AAAA/MM/DD</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm">Editar</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Notificación 8</td>
-                    <td>PUSH</td>
-                    <td>Campaña B</td>
-                    <td>AAAA/MM/DD</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm">Editar</button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <table class="table dataTables table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th><i class="fa fa-sort-amount-desc"></i> Nombre</th>
+                  <th><i class="fa fa-sort-amount-desc"></i> Tipo</th>
+                  <th><i class="fa fa-sort-amount-desc"></i> Campaña</th>
+                  <th><i class="fa fa-sort-amount-desc"></i> Fecha</th>
+                  <th>Accion</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Prevení el Dengue</td>
+                  <td>PUSH</td>
+                  <td>Dengue</td>
+                  <td>AAAA/MM/DD</td>
+                  <td>
+                    <button class="btn btn-primary btn-sm">Editar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Notificación 6</td>
+                  <td>SPLASH</td>
+                  <td>-</td>
+                  <td>AAAA/MM/DD</td>
+                  <td>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      onclick="location.replace('notificaciones/editar.html')"
+                    >
+                      Editar
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Notificación 7</td>
+                  <td>NOVEDAD</td>
+                  <td>Campaña C</td>
+                  <td>AAAA/MM/DD</td>
+                  <td>
+                    <button class="btn btn-primary btn-sm">Editar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Notificación 8</td>
+                  <td>PUSH</td>
+                  <td>Campaña B</td>
+                  <td>AAAA/MM/DD</td>
+                  <td>
+                    <button class="btn btn-primary btn-sm">Editar</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
