@@ -35,24 +35,24 @@
         <div class="row">
           <ul class="nav">
             <li class="m-y-1">
-              <a href="/index.html"
+              <a href="/index.php"
                 ><i class="icono-arg-casa-negativo" style="font-size: 0.75em;"></i
                 ><strong class="p-l-1">Dashboard</strong></a
               >
             </li>
             <li class="m-y-1">
-              <a href="notificaciones.html"
+              <a href="notificaciones.php"
                 ><i class="icono-arg-alarma-negativo" style="font-size: 0.75em;"></i
                 ><strong class="p-l-1">Notificaciones</strong></a
               >
             </li>
             <li class="m-y-1">
-              <a href="metricas.html"
+              <a href="metricas.php"
                 ><i class="fa fa-signal" style="font-size: 0.75em;"></i><strong class="p-l-1">Métricas</strong></a
               >
             </li>
             <li class="m-y-1">
-              <a href="configuracion.html"
+              <a href="configuracion.php"
                 ><i class="fa fa-cog" style="font-size: 0.75em;"></i><strong class="p-l-1">Configuración</strong></a
               >
             </li>
@@ -115,7 +115,7 @@
                </a>
              </div> -->
           <div class="col-md-4">
-            <a class="panel-default bg-white" href="notificaciones/nuevapush.html">
+            <a class="panel-default bg-white" href="notificaciones/nuevapush.php">
               <div class="text-center hidden-xs panel-frame-fix-icono">
                 <i class="fa fa-plus-circle fa-2x text-arg-azul p-t-2"></i>
               </div>

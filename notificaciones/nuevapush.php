@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="col-md-2 bg-primary p-y-2 p-x-2" style="width: fit-content;">
+    <div class="col-md-2 bg-primary p-y-2 p-x-2" style="min-width: fit-content; width: 280px; height: 100vh;">
         <div class="row">
           <h1 class="h4 p-x-2"><i class="fa fa-inbox" style="font-size: 0.75em;"></i> Noti.mi</h1>
         </div>
