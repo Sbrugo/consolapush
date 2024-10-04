@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="poncho.min.css" />
+
+    <link
+      href="/poncho/node_modules/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/gh/argob/poncho@release-1.x/dist/css/icono-arg.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="col-md-12 p-l-0">
+        <div
+        class="col-md-2 bg-primary p-y-2 p-x-2 m-l-0"
+        style="min-width: fit-content; width: 280px; height: 100vh"
+      >
+        <div class="row">
+          <a href="index.html">
+            <h1 class="h4 p-x-2">
+              <i class="fa fa-inbox" style="font-size: 0.75em"></i> Noti.mi
+            </h1>
+          </a>
+        </div>
+        <div class="row">
+          <ul class="nav">
+            <li class="m-y-1">
+              <a href="index.html"
+                ><i
+                  class="icono-arg-casa-negativo"
+                  style="font-size: 0.75em"
+                ></i
+                ><strong class="p-l-1">Dashboard</strong></a
+              >
+            </li>
+            <li class="m-y-1">
+              <a href="notificaciones.html"
+                ><i
+                  class="icono-arg-alarma-negativo"
+                  style="font-size: 0.75em"
+                ></i
+                ><strong class="p-l-1">Notificaciones</strong></a
+              >
+            </li>
+            <li class="m-y-1">
+              <a href="metricas.html"
+                ><i class="fa fa-signal" style="font-size: 0.75em"></i
+                ><strong class="p-l-1">Métricas</strong></a
+              >
+            </li>
+            <li class="m-y-1">
+              <a href="configuracion.html"
+                ><i class="fa fa-cog" style="font-size: 0.75em"></i
+                ><strong class="p-l-1">Configuración</strong></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="row m-y-6 p-y-10 vh-100">
+          <p>Nombre Apellido</p>
+        </div>
+      </div>
+        <div class="col-md-9 p-l-3 p-y-1 p-x-2">
+          <h1 class="h3 p-x-2">
+            <i class="fa fa-dashboard" style="font-size: 0.75em"></i>
+            Destinatarios
+          </h1>
+          <button
+            type="submit"
+            class="btn btn-default btn-tag pull-right m-x-1"
+          >
+            Selección masiva
+          </button>
+          <div class="col-md-11">
+            <ul class="nav nav-tabs m-t-4">
+              <li>
+                <a data-toggle="tab" href="#edadgenero">Edad y género</a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#ubicaciongeografica"
+                  >Ubicación geográfica</a
+                >
+              </li>
+              <li><a data-toggle="tab" href="#contacto">Avanzado</a></li>
+            </ul>
+            <div
+              class="tab-content bg-gray p-y-0"
+              style="padding: 20px; border: 1px solid #ddd; border-top: none"
+            >
+              <div id="edadgenero" class="tab-pane fade in active p-y-2 p-x-2">
+                <p class="m-b-2">
+                  <strong>Segmentación por edad y género</strong>
+                </p>
+                <div class="row p-x-0">
+                  <div class="col-md-4">
+                    <label>Menores (0 a 18)</label>
+                    <div class="form-group item-form">
+                      <ul class="d-flex flex-column list-unstyled">
+                        <li>
+                          <label>
+                            <input type="radio" />
+                            Todos
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" />
+                            Masculino
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" />
+                            Femenino
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" />
+                            No binario
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <label>Mayores (18 a 60)</label>
+                    <div class="form-group item-form">
+                      <ul class="d-flex flex-column list-unstyled">
+                        <li>
+                          <label>
+                            <input type="radio" />
+                            Todos
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" />
+                            Masculino
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" />
+                            Femenino
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" />
+                            No binario
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <label>Jubilados (+60)</label>
+                    <div class="form-group item-form">
+                      <ul class="d-flex flex-column list-unstyled">
+                        <li>
+                          <label>
+                            <input type="radio" />
+                            Todos
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" />
+                            Masculino
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" />
+                            Femenino
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" />
+                            No binario
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="ubicaciongeografica" class="tab-pane fade">
+                <p class="m-b-2">
+                  <strong>Segmentación por localización geográfica</strong>
+                </p>
+                <div class="row p-x-0">
+                  <div class="col-md-4">
+                    <label>Provincia</label>
+                    <div class="form-group item-form">
+                      <select class="form-control">
+                        <option selected="">Opción</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <label>Distrito</label>
+                    <div class="form-group item-form">
+                      <select class="form-control">
+                        <option selected="">Opción</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <label>Localidad</label>
+                    <div class="form-group item-form">
+                      <select class="form-control">
+                        <option selected="">Opción</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 m-y-2">
+            <button type="submit" class="btn btn-default btn-tag">
+              Siguiente
+            </button>
+            <button
+              type="button"
+              class="btn btn-default btn-tag"
+              onclick="location.replace('notificaciones/nuevapush.html')"
+            >
+              Volver
+            </button>
+            <button
+              type="button"
+              class="btn btn-default btn-tag"
+            >
+              Guardar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-KyZXEAg3QhqLMpG8r+Knujsl5+5hb7xWtlSZ9qtmHRg="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+  </body>
+</html>

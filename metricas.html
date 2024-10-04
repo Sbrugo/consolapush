@@ -27,145 +27,147 @@
   </head>
 
   <body>
-    <div class="col-md-12 p-l-0">
-      <div
-        class="col-md-2 bg-primary p-y-2 p-x-2 m-l-0"
-        style="min-width: fit-content; width: 280px; height: 100vh"
-      >
-        <div class="row">
-          <a href="index.html">
-            <h1 class="h4 p-x-2">
-              <i class="fa fa-inbox" style="font-size: 0.75em"></i> Noti.mi
-            </h1>
-          </a>
+    <div class="container-fluid">
+      <div class="col-md-12 p-l-0">
+        <div
+          class="col-md-2 bg-primary p-y-2 p-x-2 m-l-0"
+          style="min-width: fit-content; width: 280px; height: 100vh"
+        >
+          <div class="row">
+            <a href="index.html">
+              <h1 class="h4 p-x-2">
+                <i class="fa fa-inbox" style="font-size: 0.75em"></i> Noti.mi
+              </h1>
+            </a>
+          </div>
+          <div class="row">
+            <ul class="nav">
+              <li class="m-y-1">
+                <a href="index.html"
+                  ><i
+                    class="icono-arg-casa-negativo"
+                    style="font-size: 0.75em"
+                  ></i
+                  ><strong class="p-l-1">Dashboard</strong></a
+                >
+              </li>
+              <li class="m-y-1">
+                <a href="notificaciones.html"
+                  ><i
+                    class="icono-arg-alarma-negativo"
+                    style="font-size: 0.75em"
+                  ></i
+                  ><strong class="p-l-1">Notificaciones</strong></a
+                >
+              </li>
+              <li class="m-y-1">
+                <a href="metricas.html"
+                  ><i class="fa fa-signal" style="font-size: 0.75em"></i
+                  ><strong class="p-l-1">Métricas</strong></a
+                >
+              </li>
+              <li class="m-y-1">
+                <a href="configuracion.html"
+                  ><i class="fa fa-cog" style="font-size: 0.75em"></i
+                  ><strong class="p-l-1">Configuración</strong></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="row m-y-6 p-y-10 vh-100">
+            <p>Nombre Apellido</p>
+          </div>
         </div>
-        <div class="row">
-          <ul class="nav">
-            <li class="m-y-1">
-              <a href="index.html"
-                ><i
-                  class="icono-arg-casa-negativo"
-                  style="font-size: 0.75em"
-                ></i
-                ><strong class="p-l-1">Dashboard</strong></a
-              >
-            </li>
-            <li class="m-y-1">
-              <a href="notificaciones.html"
-                ><i
-                  class="icono-arg-alarma-negativo"
-                  style="font-size: 0.75em"
-                ></i
-                ><strong class="p-l-1">Notificaciones</strong></a
-              >
-            </li>
-            <li class="m-y-1">
-              <a href="metricas.html"
-                ><i class="fa fa-signal" style="font-size: 0.75em"></i
-                ><strong class="p-l-1">Métricas</strong></a
-              >
-            </li>
-            <li class="m-y-1">
-              <a href="configuracion.html"
-                ><i class="fa fa-cog" style="font-size: 0.75em"></i
-                ><strong class="p-l-1">Configuración</strong></a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="row m-y-6 p-y-10 vh-100">
-          <p>Nombre Apellido</p>
-        </div>
-      </div>
-      <div class="col-md-9 p-l-3 p-y-1 p-x-2">
-        <h1 class="h3 p-x-2 m-b-3"><i class="fa fa-chevron-left" style="font-size: 0.75em;"></i> Métricas</h1>
-        <div class="row p-x-3">
-          <h2 class="h5 m-b-2">Todas las notificaciones</h2>
-          <table class="table dataTables table-bordered table-striped">
-            <thead>
-              <tr>
-                <th><i class="fa fa-sort-amount-desc"></i> Nombre</th>
-                <th><i class="fa fa-sort-amount-desc"></i> Tipo</th>
-                <th><i class="fa fa-sort-amount-desc"></i> Campaña</th>
-                <th><i class="fa fa-sort-amount-desc"></i> Estado</th>
-                <th><i class="fa fa-sort-amount-desc"></i> Fecha</th>
-                <th>Accion</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Prevení el Dengue</td>
-                <td>PUSH</td>
-                <td>Dengue</td>
-                <td>En proceso</td>
-                <td>AAAA/MM/DD</td>
-                <td>
-                  <button class="btn btn-primary btn-sm">Editar</button>
-                </td>
-              </tr>
-              <tr>
-                <td>Notificación 6</td>
-                <td>SPLASH</td>
-                <td>-</td>
-                <td>Creado</td>
-                <td>AAAA/MM/DD</td>
-                <td>
-                  <button
-                    class="btn btn-primary btn-sm"
-                    onclick="location.replace('../notificaciones/editar.html')"
-                  >
-                    Editar
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Notificación 7</td>
-                <td>NOVEDAD</td>
-                <td>Campaña C</td>
-                <td>En proceso</td>
-                <td>AAAA/MM/DD</td>
-                <td>
-                  <button class="btn btn-primary btn-sm">Editar</button>
-                </td>
-              </tr>
-              <tr>
-                <td>Notificación 8</td>
-                <td>PUSH</td>
-                <td>Campaña B</td>
-                <td>Creado</td>
-                <td>AAAA/MM/DD</td>
-                <td>
-                  <button class="btn btn-primary btn-sm">Editar</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="text-center">
-          <ul class="pagination">
-            <li class="active">
-              <span>1</span>
-            </li>
-            <li>
-              <a href="#">2</a>
-            </li>
-            <li><a>3</a></li>
-            <li><a>4</a></li>
-            <li><a>5</a></li>
-            <li><a>6</a></li>
-            <li><a>7</a></li>
-            <li><a>8</a></li>
-            <li><a>9</a></li>
-            <li class="pager-ellipsis disabled">
-              <span>..</span>
-            </li>
-            <li class="next">
-              <a>></a>
-            </li>
-            <li class="pager-last">
-              <a>>></a>
-            </li>
-          </ul>
+        <div class="col-md-9 p-l-3 p-y-1 p-x-2">
+          <h1 class="h3 p-x-2 m-b-3"><i class="fa fa-chevron-left" style="font-size: 0.75em;"></i> Métricas</h1>
+          <div class="row p-x-3">
+            <h2 class="h5 m-b-2">Todas las notificaciones</h2>
+            <table class="table dataTables table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th><i class="fa fa-sort-amount-desc"></i> Nombre</th>
+                  <th><i class="fa fa-sort-amount-desc"></i> Tipo</th>
+                  <th><i class="fa fa-sort-amount-desc"></i> Campaña</th>
+                  <th><i class="fa fa-sort-amount-desc"></i> Estado</th>
+                  <th><i class="fa fa-sort-amount-desc"></i> Fecha</th>
+                  <th>Accion</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Prevení el Dengue</td>
+                  <td>PUSH</td>
+                  <td>Dengue</td>
+                  <td>En proceso</td>
+                  <td>AAAA/MM/DD</td>
+                  <td>
+                    <button class="btn btn-primary btn-sm">Editar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Notificación 6</td>
+                  <td>SPLASH</td>
+                  <td>-</td>
+                  <td>Creado</td>
+                  <td>AAAA/MM/DD</td>
+                  <td>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      onclick="location.replace('../notificaciones/editar.html')"
+                    >
+                      Editar
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Notificación 7</td>
+                  <td>NOVEDAD</td>
+                  <td>Campaña C</td>
+                  <td>En proceso</td>
+                  <td>AAAA/MM/DD</td>
+                  <td>
+                    <button class="btn btn-primary btn-sm">Editar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Notificación 8</td>
+                  <td>PUSH</td>
+                  <td>Campaña B</td>
+                  <td>Creado</td>
+                  <td>AAAA/MM/DD</td>
+                  <td>
+                    <button class="btn btn-primary btn-sm">Editar</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="text-center">
+            <ul class="pagination">
+              <li class="active">
+                <span>1</span>
+              </li>
+              <li>
+                <a href="#">2</a>
+              </li>
+              <li><a>3</a></li>
+              <li><a>4</a></li>
+              <li><a>5</a></li>
+              <li><a>6</a></li>
+              <li><a>7</a></li>
+              <li><a>8</a></li>
+              <li><a>9</a></li>
+              <li class="pager-ellipsis disabled">
+                <span>..</span>
+              </li>
+              <li class="next">
+                <a>></a>
+              </li>
+              <li class="pager-last">
+                <a>>></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

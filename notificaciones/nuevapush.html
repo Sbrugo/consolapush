@@ -1,116 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../poncho.min.css">
-    <link href="/poncho/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/gh/argob/poncho@release-1.x/dist/css/icono-arg.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../poncho.min.css" />
+    <link
+      href="/poncho/node_modules/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/gh/argob/poncho@release-1.x/dist/css/icono-arg.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
-</head>
-<body>
-    <div class="col-md-2 bg-primary p-y-2 p-x-2" style="min-width: fit-content; width: 280px; height: 100vh;">
-        <div class="row">
-          <h1 class="h4 p-x-2"><i class="fa fa-inbox" style="font-size: 0.75em;"></i> Noti.mi</h1>
-        </div>
-        <div class="row">
-          <ul class="nav">
-            <li class="m-y-1">
-              <a href="/index.html"
-                ><i class="icono-arg-casa-negativo" style="font-size: 0.75em;"></i
-                ><strong class="p-l-1">Dashboard</strong></a
-              >
-            </li>
-            <li class="m-y-1">
-              <a href="notificaciones.html"
-                ><i class="icono-arg-alarma-negativo" style="font-size: 0.75em;"></i
-                ><strong class="p-l-1">Notificaciones</strong></a
-              >
-            </li>
-            <li class="m-y-1">
-              <a href="metricas.html"
-                ><i class="fa fa-signal" style="font-size: 0.75em;"></i><strong class="p-l-1">Métricas</strong></a
-              >
-            </li>
-            <li class="m-y-1">
-              <a href="configuracion.html"
-                ><i class="fa fa-cog" style="font-size: 0.75em;"></i><strong class="p-l-1">Configuración</strong></a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="row m-y-6 p-y-10 vh-100">
-          <p>Nombre Apellido</p>
-        </div>
+  </head>
+  <body>
+    <div
+      class="col-md-2 bg-primary p-y-2 p-x-2 m-l-0"
+      style="min-width: fit-content; width: 280px; height: 100vh"
+    >
+      <div class="row">
+        <h1 class="h4 p-x-2">
+          <i class="fa fa-inbox" style="font-size: 0.75em"></i> Noti.mi
+        </h1>
+      </div>
+      <div class="row">
+        <ul class="nav">
+          <li class="m-y-1">
+            <a href="#"
+              ><i class="icono-arg-casa-negativo" style="font-size: 0.75em"></i
+              ><strong class="p-l-1">Dashboard</strong></a
+            >
+          </li>
+          <li class="m-y-1">
+            <a href="notificaciones.html"
+              ><i
+                class="icono-arg-alarma-negativo"
+                style="font-size: 0.75em"
+              ></i
+              ><strong class="p-l-1">Notificaciones</strong></a
+            >
+          </li>
+          <li class="m-y-1">
+            <a href="metricas.html"
+              ><i class="fa fa-signal" style="font-size: 0.75em"></i
+              ><strong class="p-l-1">Métricas</strong></a
+            >
+          </li>
+          <li class="m-y-1">
+            <a href="configuracion.html"
+              ><i class="fa fa-cog" style="font-size: 0.75em"></i
+              ><strong class="p-l-1">Configuración</strong></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="row m-y-6 p-y-10 vh-100">
+        <p>Nombre Apellido</p>
+      </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 m-t-2">
-                <div class="col-md-6 p-x-0">
-                    <h1 class="h4 p-x-2 m-b-0">Crear nueva push</h1>
-                    <hr>
-                    <form class="p-x-3">
-                        <div>
-                            <fieldset>
-                                <div class="row">
-                                    <div class="form-item webform-component webform-component-textfield webform-component--textfield form-group form-item form-item-submitted-textfield form-type-textfield form-group">
-                                        <label class="control-label">Nombre de la notificación *</label>
-                                        <input class="form-control form-text required" type="text" placeholder="Ingresar el nombre de la notificación">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-item webform-component webform-component-textfield webform-component--textfield form-group form-item form-item-submitted-textfield form-type-textfield form-group">
-                                        <label class="control-label">Campaña</label>
-                                        <input class="form-control form-text required" type="text" placeholder="Seleccioná la campaña">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-group col-md-6 p-x-0 item-form">
-                                        <label>Fecha de envío</label>
-                                        <input type="date" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-item webform-component-textfield webform-component--textfield form-group form-item form-item-submitted-textfield form-type-textfield form-group">
-                                        <label>Título</label>
-                                        <input class="form-control form-text required" type="text" placeholder="Prevení el dengue">
-                                        <p class="help-block error">Extensión máxima: 65 carácteres</p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="class=form-item webform-component webform-component-textarea webform-component--textarea form-group form-item form-item-submitted-textarea form-type-textarea form-group">
-                                        <label class="control-label">Cuerpo del mensaje</label>
-                                        <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea">
-                                            <textarea class="form-control form-textarea required" cols="60" rows="5" placeholder="Ingresar el cuerpo del mensaje"></textarea>
-                                        </div>
-                                            <p class="help-block error">Extensión máxima: 65 carácteres</p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-item webform-component webform-component-textfield webform-component--textfield form-group form-item form-item-submitted-textfield form-type-textfield form-group">
-                                        <label class="control-label">Link</label>
-                                        <input class="form-control form-text required">
-                                    </div>
-                                </div>
-                            </fieldset>
-                        </div>
-                    </form>
-                    <div class="p-l-3">
-                        <button type="button" class="btn btn-success m-r-1 btn-sm" onclick="location.replace('../componentes/segmentacion.html')">Siguiente</button>
-                        <button type="button" class="btn btn-success m-r-1 btn-sm" onclick="location.replace('../componentes/segmentacion.html')">Volver</button>
-                        <button type="button" onclick="location.replace('../index.html')" class="btn btn-primary btn-sm">Guardar</button>
+      <div class="row">
+        <div class="col-md-10 m-t-2">
+          <div class="col-md-6 p-x-0">
+            <h1 class="h4 p-x-2 m-b-0">Crear nueva push</h1>
+            <hr />
+            <form class="p-x-3">
+              <div>
+                <fieldset>
+                  <div class="row">
+                    <div
+                      class="form-item webform-component webform-component-textfield webform-component--textfield form-group form-item form-item-submitted-textfield form-type-textfield form-group"
+                    >
+                      <label class="control-label"
+                        >Nombre de la notificación *</label
+                      >
+                      <input
+                        class="form-control form-text required"
+                        type="text"
+                        placeholder="Ingresar el nombre de la notificación"
+                      />
                     </div>
-                </div>
-                
-                    <div class="col-md-2">
-                        <p>Hola</p>
+                  </div>
+                  <div class="row">
+                    <div
+                      class="form-item webform-component webform-component-textfield webform-component--textfield form-group form-item form-item-submitted-textfield form-type-textfield form-group"
+                    >
+                      <label class="control-label">Campaña</label>
+                      <input
+                        class="form-control form-text required"
+                        type="text"
+                        placeholder="Seleccioná la campaña"
+                      />
                     </div>
-
+                  </div>
+                  <div class="row">
+                    <div class="form-group col-md-6 p-x-0 item-form">
+                      <label>Fecha de envío</label>
+                      <input type="date" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div
+                      class="form-item webform-component-textfield webform-component--textfield form-group form-item form-item-submitted-textfield form-type-textfield form-group"
+                    >
+                      <label>Título</label>
+                      <input
+                        class="form-control form-text required"
+                        type="text"
+                        placeholder="Prevení el dengue"
+                      />
+                      <p class="help-block error">
+                        Extensión máxima: 65 carácteres
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div
+                      class="class=form-item webform-component webform-component-textarea webform-component--textarea form-group form-item form-item-submitted-textarea form-type-textarea form-group"
+                    >
+                      <label class="control-label">Cuerpo del mensaje</label>
+                      <div
+                        class="form-textarea-wrapper resizable textarea-processed resizable-textarea"
+                      >
+                        <textarea
+                          class="form-control form-textarea required"
+                          cols="60"
+                          rows="5"
+                          placeholder="Ingresar el cuerpo del mensaje"
+                        ></textarea>
+                      </div>
+                      <p class="help-block error">
+                        Extensión máxima: 65 carácteres
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div
+                      class="form-item webform-component webform-component-textfield webform-component--textfield form-group form-item form-item-submitted-textfield form-type-textfield form-group"
+                    >
+                      <label class="control-label">Link</label>
+                      <input class="form-control form-text required" />
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </form>
+            <div class="p-l-3">
+              <button
+                type="button"
+                class="btn btn-success m-r-1 btn-sm"
+                onclick="location.replace('../componentes/segmentacion.html')"
+              >
+                Siguiente
+              </button>
+              <button
+                type="button"
+                class="btn btn-success m-r-1 btn-sm"
+                onclick="location.replace('../componentes/segmentacion.html')"
+              >
+                Volver
+              </button>
+              <button
+                type="button"
+                onclick="location.replace('../index.html')"
+                class="btn btn-primary btn-sm"
+              >
+                Guardar
+              </button>
             </div>
+          </div>
+
+          <div class="col-md-2">
+            <p>Hola</p>
+          </div>
         </div>
-    
+      </div>
     </div>
-</body>
+  </body>
 </html>
