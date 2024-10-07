@@ -100,7 +100,33 @@
                           type="text"
                           placeholder="Seleccioná la campaña"
                         />
+                    <div class="row m-b-1">
+                      <button class="btn btn-link btn-sm pull-right m-t-1">+ Crear campaña</button>
+
+                        <label class="control-label">Campaña</label>
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder="Seleccioná la campaña"
+                        />
                     </div>
+                    <div class="row m-b-1">
+                      <div class="col-md-6 p-x-0">
+                        <label class="control-label">Fecha de envío</label>
+                        <input type="date" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="row m-b-1">
+                      
+                        <label class="control-label">Título</label>
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder="Prevení el dengue"
+                        />
+                        <p class="help-block error">
+                          Extensión máxima: 65 carácteres
+                        </p>
                     <div class="row m-b-1">
                       <div class="col-md-6 p-x-0">
                         <label class="control-label">Fecha de envío</label>
@@ -132,6 +158,19 @@
                         <p class="help-block error">
                           Extensión máxima: 65 carácteres
                         </p>
+                    <div class="row m-b-1">
+                      
+                        <label class="control-label">Cuerpo del mensaje</label>
+                        
+                          <textarea
+                            class="form-control"
+                            cols="60"
+                            rows="5"
+                            placeholder="Ingresar el cuerpo del mensaje"
+                          ></textarea>
+                        <p class="help-block error">
+                          Extensión máxima: 65 carácteres
+                        </p>
                     </div>
                     <div class="row m-b-1">
                       
@@ -144,11 +183,13 @@
                 type="button"
                 class="btn btn-success m-r-1 btn-sm"
                 onclick="location.replace('../destinatarios.html')"              >
+                onclick="location.replace('../destinatarios.html')"              >
                 Siguiente
               </button>
               <button
                 type="button"
                 class="btn btn-success m-r-1 btn-sm"
+                onclick="location.replace('nuevanoti.html')"
                 onclick="location.replace('nuevanoti.html')"
               >
                 Volver
@@ -160,6 +201,10 @@
               >
                 Guardar
               </button>
+            </div>
+          </div>
+          </div>
+      </div>
             </div>
           </div>
           </div>
