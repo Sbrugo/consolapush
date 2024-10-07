@@ -26,149 +26,130 @@
     <title>Document</title>
   </head>
   <body>
-    <div
-      class="col-md-2 bg-primary p-y-2 p-x-2 m-l-0"
-      style="min-width: fit-content; width: 280px; height: 100vh"
-    >
-      <div class="row">
-        <h1 class="h4 p-x-2">
-          <i class="fa fa-inbox" style="font-size: 0.75em"></i> Noti.mi
-        </h1>
-      </div>
-      <div class="row">
-        <ul class="nav">
-          <li class="m-y-1">
-            <a href="#"
-              ><i class="icono-arg-casa-negativo" style="font-size: 0.75em"></i
-              ><strong class="p-l-1">Dashboard</strong></a
-            >
-          </li>
-          <li class="m-y-1">
-            <a href="notificaciones.html"
-              ><i
-                class="icono-arg-alarma-negativo"
-                style="font-size: 0.75em"
-              ></i
-              ><strong class="p-l-1">Notificaciones</strong></a
-            >
-          </li>
-          <li class="m-y-1">
-            <a href="metricas.html"
-              ><i class="fa fa-signal" style="font-size: 0.75em"></i
-              ><strong class="p-l-1">Métricas</strong></a
-            >
-          </li>
-          <li class="m-y-1">
-            <a href="configuracion.html"
-              ><i class="fa fa-cog" style="font-size: 0.75em"></i
-              ><strong class="p-l-1">Configuración</strong></a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="row m-y-6 p-y-10 vh-100">
-        <p>Nombre Apellido</p>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 m-t-2">
-          <div class="col-md-6 p-x-0">
-            <h1 class="h4 p-x-2 m-b-0">Crear nueva push</h1>
-            <hr />
-            <form class="p-x-3">
-              <div>
-                <fieldset>
-                  <div class="row">
-                    <div
-                      class="form-item webform-component webform-component-textfield webform-component--textfield form-group form-item form-item-submitted-textfield form-type-textfield form-group"
-                    >
-                      <label class="control-label"
-                        >Nombre de la notificación *</label
-                      >
-                      <input
-                        class="form-control form-text required"
-                        type="text"
-                        placeholder="Ingresar el nombre de la notificación"
-                      />
+    <div class="container-fluid">
+      <div class="col-md-12 p-l-0">
+        <div
+        class="col-md-2 bg-primary p-y-2 p-x-2 m-l-0"
+        style="min-width: fit-content; width: 280px; height: 100vh"
+      >
+        <div class="row">
+          <h1 class="h4 p-x-2">
+            <i class="fa fa-inbox" style="font-size: 0.75em"></i> Noti.mi
+          </h1>
+        </div>
+        <div class="row">
+          <ul class="nav">
+            <li class="m-y-1">
+              <a href="#"
+                ><i
+                  class="icono-arg-casa-negativo"
+                  style="font-size: 0.75em"
+                ></i
+                ><strong class="p-l-1">Dashboard</strong></a
+              >
+            </li>
+            <li class="m-y-1">
+              <a href="../notificaciones.html"
+                ><i
+                  class="icono-arg-alarma-negativo"
+                  style="font-size: 0.75em"
+                ></i
+                ><strong class="p-l-1">Notificaciones</strong></a
+              >
+            </li>
+            <li class="m-y-1">
+              <a href="metricas.html"
+                ><i class="fa fa-signal" style="font-size: 0.75em"></i
+                ><strong class="p-l-1">Métricas</strong></a
+              >
+            </li>
+            <li class="m-y-1">
+              <a href="configuracion.html"
+                ><i class="fa fa-cog" style="font-size: 0.75em"></i
+                ><strong class="p-l-1">Configuración</strong></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="row m-y-6 p-y-10 vh-100">
+          <p>Nombre Apellido</p>
+        </div>
+        </div>
+          <div class="col-md-9 p-l-3 p-y-1 p-x-2">
+            <h1 class="h3 m-b-2"><i class="fa fa-chevron-left" style="font-size: 0.75em"></i> Crear nueva push</h1>
+            <div class="col-md-7">
+              <form>
+                <div>
+                    <div class="row m-b-1">
+                      
+                        <label class="control-label"
+                          >Nombre de la notificación *</label
+                        >
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder="Ingresar el nombre de la notificación"
+                        />
                     </div>
-                  </div>
-                  <div class="row">
-                    <div
-                      class="form-item webform-component webform-component-textfield webform-component--textfield form-group form-item form-item-submitted-textfield form-type-textfield form-group"
-                    >
-                      <label class="control-label">Campaña</label>
-                      <input
-                        class="form-control form-text required"
-                        type="text"
-                        placeholder="Seleccioná la campaña"
-                      />
+                    <div class="row m-b-1">
+                      <button class="btn btn-link btn-sm pull-right m-t-1">+ Crear campaña</button>
+
+                        <label class="control-label">Campaña</label>
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder="Seleccioná la campaña"
+                        />
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="form-group col-md-6 p-x-0 item-form">
-                      <label>Fecha de envío</label>
-                      <input type="date" class="form-control" />
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div
-                      class="form-item webform-component-textfield webform-component--textfield form-group form-item form-item-submitted-textfield form-type-textfield form-group"
-                    >
-                      <label>Título</label>
-                      <input
-                        class="form-control form-text required"
-                        type="text"
-                        placeholder="Prevení el dengue"
-                      />
-                      <p class="help-block error">
-                        Extensión máxima: 65 carácteres
-                      </p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div
-                      class="class=form-item webform-component webform-component-textarea webform-component--textarea form-group form-item form-item-submitted-textarea form-type-textarea form-group"
-                    >
-                      <label class="control-label">Cuerpo del mensaje</label>
-                      <div
-                        class="form-textarea-wrapper resizable textarea-processed resizable-textarea"
-                      >
-                        <textarea
-                          class="form-control form-textarea required"
-                          cols="60"
-                          rows="5"
-                          placeholder="Ingresar el cuerpo del mensaje"
-                        ></textarea>
+                    <div class="row m-b-1">
+                      <div class="col-md-6 p-x-0">
+                        <label class="control-label">Fecha de envío</label>
+                        <input type="date" class="form-control" />
                       </div>
-                      <p class="help-block error">
-                        Extensión máxima: 65 carácteres
-                      </p>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div
-                      class="form-item webform-component webform-component-textfield webform-component--textfield form-group form-item form-item-submitted-textfield form-type-textfield form-group"
-                    >
-                      <label class="control-label">Link</label>
-                      <input class="form-control form-text required" />
+                    <div class="row m-b-1">
+                      
+                        <label class="control-label">Título</label>
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder="Prevení el dengue"
+                        />
+                        <p class="help-block error">
+                          Extensión máxima: 65 carácteres
+                        </p>
                     </div>
-                  </div>
-                </fieldset>
-              </div>
-            </form>
+                    <div class="row m-b-1">
+                      
+                        <label class="control-label">Cuerpo del mensaje</label>
+                        
+                          <textarea
+                            class="form-control"
+                            cols="60"
+                            rows="5"
+                            placeholder="Ingresar el cuerpo del mensaje"
+                          ></textarea>
+                        <p class="help-block error">
+                          Extensión máxima: 65 carácteres
+                        </p>
+                    </div>
+                    <div class="row m-b-1">
+                      
+                        <label class="control-label">Link</label>
+                        <input class="form-control" />
+                    </div>
+              </form>
             <div class="p-l-3">
               <button
                 type="button"
                 class="btn btn-success m-r-1 btn-sm"
-                onclick="location.replace('../componentes/segmentacion.html')"
-              >
+                onclick="location.replace('../destinatarios.html')"              >
                 Siguiente
               </button>
               <button
                 type="button"
                 class="btn btn-success m-r-1 btn-sm"
-                onclick="location.replace('../componentes/segmentacion.html')"
+                onclick="location.replace('nuevanoti.html')"
               >
                 Volver
               </button>
@@ -181,12 +162,7 @@
               </button>
             </div>
           </div>
-
-          <div class="col-md-2">
-            <p>Hola</p>
           </div>
-        </div>
       </div>
-    </div>
   </body>
 </html>
